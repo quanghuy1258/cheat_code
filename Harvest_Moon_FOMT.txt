@@ -1,0 +1,2256 @@
+Name: Harvest Moon: Friends of Mineral Town
+Console: Gameboy Advance
+Version 1.0
+01/01/2008
+
+Written by:
+  samurai goroh
+  samuraigoroh@gmail.com
+
+
+*******************************************************************************
+               _   _    __    ___   __   __   ___   ___   _____
+              | |_| |  /  \  | _ | (  ) (  ) | __) | __) (_   _)
+              |  _  | | ^^ | |  _|  \ \_/ /  | _)  |__ |   | |
+              |_| |_| |_/\_| |_\_\   \___/   |___) (___|   |_|
+
+                          _____   ___   ___   __  _
+                         |     | |   | |   | |  \| |
+                         | | | | | | | | | | | . ' |
+                         |_|_|_| |___| |___| |_|\__|
+
+                    ___        ___     _____        _____
+                   | __)      / _ \   |     |      (_   _)
+                   | _)      | (_) |  | | | |        | |
+                   |_|riends  \___/f  |_|_|_|ineral  |_|own
+
+*******************************************************************************
+
+
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+|19.0 Codes                                                                   |
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+
+  The codes consist in two parts, one is the address and the other one is the
+value of the address. In every code you need to change the value in order to
+have the effect that you want. I will give you both, the address & the value &
+also explain what happens if you put certain # in the value.
+
+  The codes are for Visual Boy Advance (VBA), they could also work for
+Codebreaker only if the value of the code has 4 or 8 digits & instead of
+starting the code with a 0XXXXXXX change it to a 8XXXXXXX. If the value only
+has 2 digits you may add 00XX & the code MAY also work in Codebreaker. also 
+you need a Master Code for CB in order to make them work, here's the MC:
+
+  CodeBreaker Master Code
+
+        0000E882 000A
+        100D1BF8 0007
+
+Note: You don't need the MC while playing with the VBA, just use it if you 
+aren't playing with the VBA
+
+  To make it a VBA code you need to add : (colon) after the address & then the
+value of the address. The codebreaker codes doesn't need the :, just put the
+value after the code (without a space).
+
+  To input the code in the VBA go to the Menu Bar, Cheats --> Cheat list...
+In the bottom of the page you'll see Code..., press it and then input the
+code.
+
+  You can also change the value of the code with the memory viewer. To see the
+memory in the VBA search in the Menu Bar, go to Tools --> Memory Viewer,
+then type the address and press GO. You can change the display settings with
+the 8, 16 & 32 bit buttons (what is 2,4 or 8 digits).
+
+  The codes have 2 stages, than means that one code will be moved away some
+spaces if certain conditions are presented, this don't affect the values.
+
+Stage 1 = Never load the game with battery (Just Save States)
+Stage 2 = Loaded the game with battery = (Stage 1 + 2834 hex)
+
+Example:
+         020041B0  is the code in Stage 1 for your name, and
+        [020069E4] is the same code for the name, but this time is for Stage 2.
+
+NOTE: All Stage 2 codes have [Brackets], so there's no confusion, I hope (^.^)
+
+NOTE 2: The XX's or ??'s that are in the values are used for different things,
+this are explained in the same section that you found the address code.
+Remember that the values doesn't change for Stage 1 to Stage 2
+
+NOTE 3: If a code doesn't work that may be because isn't in that address, so
+use the memory viewer, put a code for a name (so you can see the name in the
+right part of the screen),and look how far away it was, then just add or
+substrack the number of bits to know any code.
+
+*******************************************************************************
+
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+| 19.1 Changing Names                                                         |
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+
+  If you want to change the names of you & your animals you can do 2 things,
+the 1st one is by using the memory viewer, and the 2nd one is via codes, I
+recommend using the memory viewer because it's by far easier than just putting
+the code.
+  Each name has a space for 12 characters max & each code will give you 4
+character. So if you want a name with 5 characters you need to use Code 1 &
+Code 2.
+  If you want to use codes, change any value of this section with the table
+that follows this one.
+
++-----------------------------------------------------------------------------+
+| To Who                     Code 1    Code 2    Code 3       Value           |
++-----------------------------------------------------------------------------+
+| Your Name                 020041B0, 020041B4, 020041B8     XXXXXXXX         |
+|                          [020069E4][020069E8][020069EC]                     |
++-----------------------------------------------------------------------------+
+| Your Nick Name            020041C0, 020041C4, 020041C8     XXXXXXXX         |
+|(When you're married)     [020069F4][020069F8][020069FC]                     |
++-----------------------------------------------------------------------------+
+| Your Son's Name           020042C4, 020042C8, 020042CC     XXXXXXXX         |
+|                          [02006AF0][02006AF4][02006AF8]                     |
++-----------------------------------------------------------------------------+
+| Property Name             020025EC, 020025F0, 020025F4     XXXXXXXX         |
+|                          [02004E20][02004E24][02004E28]                     |
++-----------------------------------------------------------------------------+
+| AWL Player                020047C8  020047CC  020047D0     XXXXXXXX         |
+|                          [02006FFC][02007000][02007004]                     |
++-----------------------------------------------------------------------------+
+| AWL Player's son          020047D8  020047DC  020047E0     XXXXXXXX         |
+|                          [0200000C][02000010][02000014]                     |
++-----------------------------------------------------------------------------+
+| AWL Farm                  020047B8  020047BC  020047C0     XXXXXXXX         |
+|                          [02006FEC][02006FF0][02006FF4]                     |
++-----------------------------------------------------------------------------+
+| Horse Name                02002608, 0200260C, 02002610     XXXXXXXX         |
+|                          [02004E3C][02004E40][02004E44]                     |
++-----------------------------------------------------------------------------+
+| Dog's Name                02004250, 02004254, 02004258     XXXXXXXX         |
+|                          [02006A84][02006A88][02006A8C]                     |
++-----------------------------------------------------------------------------+
+| Chicken # 1 Name          02002A0C, 02002A10, 02002A14     XXXXXXXX         |
+|                          [02005240][02005244][02005248]                     |
+|                                                                             |
+| Chicken # 2 Name          02002A3C, 02002A40, 02002A44     XXXXXXXX         |
+|                          [02005270][02005274][02005278]                     |
+|                                                                             |
+| Chicken # 3 Name          02002A6C, 02002A70, 02002A74     XXXXXXXX         |
+|                          [020052A0][020052A4][020052A8]                     |
+|                                                                             |
+| Chicken # 4 Name          02002A9C, 02002AA0, 02002AA4     XXXXXXXX         |
+|                          [020052D0][020052D4][020052D8]                     |
+|                                                                             |
+| Chicken # 5 Name          02002ACC, 02002AD0, 02002AD4     XXXXXXXX         |
+|                          [02005300][02005304][02005308]                     |
+|                                                                             |
+| Chicken # 6 Name          02002AFC, 02002B00, 02002B04     XXXXXXXX         |
+|                          [02005330][02005334][02005338]                     |
+|                                                                             |
+| Chicken # 7 Name          02002B2C, 02002B30, 02002B34     XXXXXXXX         |
+|                          [02005360][02005364][02005368]                     |
+|                                                                             |
+| Chicken # 8 Name          02002B5C, 02002B60, 02002B64     XXXXXXXX         |
+|                          [02005390][02005394][02005398]                     |
++-----------------------------------------------------------------------------+
+| Barn Animal # 1 Name      02002C00, 02002C04, 02002C08     XXXXXXXX         |
+|                          [02005434][02005438][0200543C]                     |
+|                                                                             |
+| Barn Animal # 2 Name      02002C3C, 02002C40, 02002C44     XXXXXXXX         |
+|                          [02005470][02005474][02005478]                     |
+|                                                                             |
+| Barn Animal # 3 Name      02002C78, 02002C7C, 02002C80     XXXXXXXX         |
+|                          [020054AC][020054B0][020054B4]                     |
+|                                                                             |
+| Barn Animal # 4 Name      02002CB4, 02002CB8, 02002CBC     XXXXXXXX         |
+|                          [020054E8][020054EC][020054F0]                     |
+|                                                                             |
+| Barn Animal # 5 Name      02002CF0, 02002CF4, 02002CF8     XXXXXXXX         |
+|                          [02005524][02005528][0200552C]                     |
+|                                                                             |
+| Barn Animal # 6 Name      02002D2C, 02002D30, 02002D34     XXXXXXXX         |
+|                          [02005560][02005564][02005568]                     |
+|                                                                             |
+| Barn Animal # 7 Name      02002D68, 02002D6C, 02002D70     XXXXXXXX         |
+|                          [0200559C][020055A0][020055A4]                     |
+|                                                                             |
+| Barn Animal # 8 Name      02002DA4, 02002DA8, 02002DAC     XXXXXXXX         |
+|                          [020055D8][020055DC][020055E0]                     |
+|                                                                             |
+| Barn Animal # 9 Name      02002DE0, 02002DE4, 02002DE8     XXXXXXXX         |
+|                          [02005614][02005618][0200561C]                     |
+|                                                                             |
+| Barn Animal #10 Name      02002E1C, 02002E20, 02002E24     XXXXXXXX         |
+|                          [02005650][02005654][02005658]                     |
+|                                                                             |
+| Barn Animal #11 Name      02002E58, 02002E5C, 02002E60     XXXXXXXX         |
+|                          [0200568C][02005690][02005694]                     |
+|                                                                             |
+| Barn Animal #12 Name      02002E94, 02002E98, 02002E9C     XXXXXXXX         |
+|                          [020056C8][020056CC][020056D0]                     |
+|                                                                             |
+| Barn Animal #13 Name      02002ED0, 02002ED4, 02002ED8     XXXXXXXX         |
+|                          [02005704][02005708][0200570C]                     |
+|                                                                             |
+| Barn Animal #14 Name      02002F0C, 02002F10, 02002F14     XXXXXXXX         |
+|                          [02005740][02005744][02005748]                     |
+|                                                                             |
+| Barn Animal #15 Name      02002F48, 02002F4C, 02002F50     XXXXXXXX         |
+|                          [0200577C][02005780][02005784]                     |
+|                                                                             |
+| Barn Animal #16 Name      02002F84, 02002F88, 02002F8C     XXXXXXXX         |
+|                          [020057B8][020057BC][020057C0]                     |
++-----------------------------------------------------------------------------+
+
+===============================================================================
+ Naming Manually
+===============================================================================
+
+  If you want to change the names with the code you need to put the name in
+series of 4 letters (8 characters) but backwards. Example, the word Harvester,
+you separate it in groups of 4 letters from left to right. If there's space 
+for more letters just fill them with 00. Put each letter in the value.
+
+Harvester
+
+ H  a  r  v      e  s  t  e      r END END END
+48 61 72 76     65 73 74 65     72  00  00  00
+
+  Then you change the order of the letters, beginning with the 4th and ending
+with the 1st letter.
+
+ v  r  a  H       e  t  s  e  END END END   r
+76 72 61 48      65 74 73 65   00  00  00  72
+
+ And the values are: 76726148, 65747365, 00000072
+
+  The 1st 2 digits are the value & the next character is the result
+
+=====================================================================
+ 41  A       42  B       43  C       44  D       45  E       46  F
+ 47  G       48  H       49  I       4A  J       4B  K       4C  L
+ 4D  M       4E  N       4F  O       50  P       51  Q       52  R
+ 53  S       54  T       55  U       56  V       57  W       58  X
+ 59  Y       5A  Z
+=====================================================================
+ 6F  o       B6  White Star          B7  Black Star          25  %
+=====================================================================
+ 61  a       62  b       63  c       64  d       65  e       66  f
+ 67  g       68  h       69  i       6A  j       6B  k       6C  l
+ 6D  m       6E  n       6F  o       70  p       71  q       72  r
+ 73  s       74  t       75  u       76  v       77  w       78  x
+ 79  y       7A  z
+=====================================================================
+ 27  '       2E  .       A5  =       2A  *       00  END of the Name
+=====================================================================
+ 30  0       31  1       32  2       33  3       34  4       35  5
+ 36  6       37  7       38  8       39  9
+=====================================================================
+ 2B  +       2D  -       78  x       7E  ¯       2F  /       3C  <
+ 3E  >       28  (       29  )       A2  Opening Board
+ A3  Closing Board       26  &       21  !       3F  ?
+ B1  Women's symbol      B2  Men's symbol        B3  Musical Note
+ B4  Heart
+=====================================================================
+ 20  Space   22  "       23  #       24  $       2C  ,       3A  :
+ 3B  ;       3D  =       40  @       5B  [       5C  ¥       5D  ]
+ 5E  ^       5F  _       60  ´       7B  {       7C  |       7D  }
+=====================================================================
+
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+| 19.2 Changing Houses                                                        |
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+
+  In this section you'll be able to change your House & Cottage Houses.
+
+
+UPGRADES IN THE HOUSE  020027xx --> xx goes from CC to D3
+                      [020050xx --> xx goes from 00 to 07]
+
+(So there are 8 diferent codes in total)
+
+Note: Don't try to put any other value that the ones mentioned here, because 
+your house may dissapear & the only way to fix this is by returning the values
+to their normal status
+
+ CC = Upgrades of the house (House, Mail, Dog house, Windows)
+[00]    00 --> Not upgraded
+        01 --> 1st upgrade
+        02 --> 2nd upgrade
+
+ CD = Record Player, Shelf, Refrigerator, Bathroom, Vase, Carpet
+[01]    00 --> Nothing
+        01 --> Bathroom
+        02 --> Refrigerator
+        03 --> Bathroom + Refrigerator
+        04 --> Shelf
+        05 --> Bathroom + Shelf
+        06 --> Refrigerator + Shelf
+        07 --> Bathroom + Refrigerator + Shelf
+        08 --> Record Player
+        09 --> Bathroom + Record Player
+        0A --> Refrigerator + Record Player
+        0B --> Bathroom + Refrigerator + Record Player
+        0C --> Shelf + Record Player
+        0D --> Bathroom + Shelf + Record Player
+        0E --> Refrigerator + Shelf + Record Player
+        0F --> Bathroom + Refrigerator + Shelf + Record Player
+
+       +40 --> + Vase
+       +60 --> + Carpet
+       +80 --> Same
+
+  Here's a table, just to see the sequence, that's all
+
+o = you have it
+X = you don't have it
+
+===============================================================================
+| Name          |00  01  02  03  04  05  06  07  08  09  0A  0B  0C  0D  0E  0F
+===============================================================================
+| Bathroom      | x   o   x   o   x   o   x   o   x   o   x   o   x   o   x   o
+| Refrigerator  | x   x   o   o   x   x   o   o   x   x   o   o   x   x   o   o
+| Shelf         | x   x   x   x   o   o   o   o   x   x   x   x   o   o   o   o
+| Record Player | x   x   x   x   x   x   x   x   o   o   o   o   o   o   o   o
+===============================================================================
+
+ CE = Inside the Vase (Don't try to change this one or you'll mess it up)
+[02]    2F --> Nothing
+
+ CF = Mirror, Clock, Sock
+[03]    C1 to CF --> Mirror
+        D0 to D7 --> Clock
+        D8 to DF --> Mirror + Clock
+        E0 to E7 --> Sock
+        E8 to EF --> Sock + Mirror
+        F0 to F7 --> Sock + Clock
+        F8 to FF --> Sock + Mirror + Clock
+
+ D0 = Kitchen, Fireplace lighted, Filling the Sock
+[04]    00 to 3F --> none
+        40 to 7F --> Fireplace lighted
+        80 to BF --> Kitchen
+        C0 to FF --> Kitchen + Fireplace lighted
+
+     + <20 --> Sock Empty
+     + >20 --> Sock Full
+
+ D1 = Utensils
+[05]
+
+(Seasoning set = A, Oven = B, Rolling pin = C, Whisk = D, Mixer = E, Pot = F,
+Frying pan = G, Knife = H)
+
+0 = You don't have it
+1 = You DO have it
+
+=================           ==============================
+ A B C D E F G H             Binary   Decimal Hexadecimal
+=================           ==============================
+ 0 0 0 0 0 0 0 0             00000000     0       00
+ 0 0 0 0 0 0 0 1             00000001     1       01
+ 0 0 0 0 0 0 1 0             00000010     2       02
+ 0 0 0 0 0 1 0 0             00000100     4       04
+ 0 0 0 0 1 0 0 0             00001000     8       08
+ 0 0 0 1 0 0 0 0             00010000    16       10
+ 0 0 1 0 0 0 0 0             00100000    32       20
+ 0 1 0 0 0 0 0 0             01000000    64       40
+ 1 0 0 0 0 0 0 0             10000000   128       80
+=================            11111111   255       FF
+                            ==============================
+
+  So, if you want certain Utensils, just add in Binary the 1's in the left 
+table, example: I want a,b,e,h. that would be:
+
+ 00000001    (Knife)
+ 00001000    (Mixer)
+ 01000000    (Rolling Pin)
+ 10000000    (Seasoning Set)
+----------
+ 11001001 
+
+Now separate the number in groups of 4 (that would be 2 groups). 1100 & 1001.
+Then, use the next chart to convert from binary to hexadecimal:
+
+0000 is 0 in hex     0001 is 1 in hex     0010 is 2 in hex     0011 is 3 in hex
+0100 is 4 in hex     0101 is 5 in hex     0110 is 6 in hex     0111 is 7 in hex
+1000 is 8 in hex     1001 is 9 in hex     1010 is A in hex     1011 is B in hex
+1100 is C in hex     1101 is D in hex     1110 is E in hex     1111 is F in hex
+
+And finally change the numbers 1100 & 1001 and you'll have C & 9; just join 
+them and the number you got is C9
+ 
+
+ D2 = Not sure if this byte is used for the house, just don't use it
+[06]
+
+ D3 = Not sure if this byte is used for the house, just don't use it
+[07]
+
+===============================================================================
+|                              020027XX  --> | CC  CD  CE  CF  D0  D1  D2  D3 |
+|                             [020050XX] --> |[00][01][02][03][04][05][06][07]|
+===============================================================================
+| Have nothing, When you begin               | 00  80  2F  C1  17  00  00  20 |
+| Not upgraded, Have all you can             | 00  C8  2F  F8  17  22  20  00 |
+|  1st upgrade, Have all you can             | 01  F8  AF  F8  80  FF  20  00 |
+|  2nd upgrade, Have everything              | 02  7F  2F  F8  C0  FF  00  00 |
+===============================================================================
+
+
+ 020025D8:XX = Town, Mountain & Seaside Cottages
+[02004E0C]
+
+                   ==================================
+                   | 00  01  02  03  04  05  06  07 |
+===================+================================+
+| Mountain Cottage |  x   o   x   o   x   o   x   o |    o = you have it
+| Town Cottage     |  x   x   o   o   x   x   o   o |    x = you don't have it
+| Seaside Cottage  |  x   x   x   x   o   o   o   o |
+=====================================================
+
+(If you add 08, then the results will be the same).
+
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+| 19.3 Changing Time, Season & Weather                                        |
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+
+  If you want to be somewhere at certain time, you can't wait until the next
+Spring or the weather is bad, use this codes to change whatever you want.
+
+--------
+Set Hour
+--------
+
+  Don't change the time inside a house where you normally can't be at that time
+because you'll get stuck & need to change the time again in a normal hour.
+
+         020025EA:XX
+        [02004E1E]
+
++--------------------------------------------+
+| Hour | 12 01 02 03 04 05 06 07 08 09 10 11 |
++------+-------------------------------------+
+| AM   | 00 01 02 03 04 05 06 07 08 09 0A 0B |
+| PM   | 0C 0D 0E 0F 10 11 12 13 14 15 16 17 |
++--------------------------------------------+
+
+         00 = 12 midnight
+         0C = 12 noon
+
+-------------------------
+Freeze minutes at ___:??
+-------------------------
+
+         020025EB:XX
+        [02004E1F]
+
++--------------------------+
+| Min. | 00 10 20 30 40 50 |
++------+-------------------+
+| Code | 78 79 7A 7B 7D 7E |
++--------------------------+
+
+  +----+----+----+----+----+----+
+  | 0  | 1  | 2  | 3  | 4  | 5  |
++-+----+----+----+----+----+----+
+|0| 00 | 12 | 24 | 36 | 50 | 62 |
+|1| 01 | 13 | 25 | 37 | 51 | 63 |
+|2| 02 | 14 | 26 | 40 | 52 | 64 |
+|3| 03 | 15 | 27 | 41 | 53 | 65 |
+|4| 04 | 16 | 30 | 42 | 54 | 66 |
+|5| 05 | 17 | 31 | 43 | 55 | 67 |
+|6| 06 | 20 | 32 | 44 | 56 | 70 |
+|7| 07 | 21 | 33 | 45 | 57 | 71 |
+|8| 10 | 22 | 34 | 46 | 60 | 72 |
+|9| 11 | 23 | 35 | 47 | 61 | 73 |
++-+----+----+----+----+----+----+
+
+---------------
+Set the Weather
+---------------
+
+  If you change the weather to a rainy day after you leave your house at 6:00
+AM hoping that you don't need to water the ground, that will not happen. But if
+there is a storm or a blizzard & you change the weather to other thing, you can
+now get out of your house.
+
+ 020025E0:XX
+[02004E14]
+
+          00 = Sunny
+          01 = Rainy
+          02 = Snowy
+          03 = Stormy   (Can't leave the house)
+          04 = Blizzard (Can't leave the house)
+
+-------------------------------------
+Tomorrow Forecast (Use the #'s above)
+-------------------------------------
+
+ 020025E4:XX
+[02004E18] 
+
+--------------
+Set Year & Day
+--------------
+
+  If you want to be in a special day like an event you can use this codes to
+change the day or year; if you had a event like the cooking festival and you
+go to sleep and then change the day to yesterday, then the event won't happen
+again.
+  Even though that there isn't a day 31 nor 32, with the codes you can be in
+that day... So, if you want a day, for example Autumn 10, the value is 26
+
+ 020025E8:??XX
+[02004E1C]
+
+          ?? --> Day      (+80 hex = The same result)
+            XX --> Year
+
+         +-----------------------------------------------------------------+
+   Day # | 01  02  03  04  05  06  07  08  09  10  11  12  13  14  15  16  |
++--------+-----------------------------------------------------------------+
+| Spring | 00  04  08  0C  10  14  18  1C  20  24  28  2C  30  34  38  3C  |
+| Summer | 01  05  09  0D  11  15  19  1D  21  25  29  2D  31  35  39  3D  |
+| Autumn | 02  06  0A  0E  12  16  1A  1E  22  26  2A  2E  32  36  3A  3E  |
+| Winter | 03  07  0B  0F  13  17  1B  1F  23  27  2B  2F  33  37  3B  3F  |
++--------+-----------------------------------------------------------------+
+
+         +--------------------------------------------------------+---------+
+   Day # | 17  18  19  20  21  22  23  24  25  26  27  28  29  30 | 31  32  |
++--------+--------------------------------------------------------+---------+
+| Spring | 40  44  48  4C  50  54  58  5C  60  64  68  6C  70  74 | 78  7C  |
+| Summer | 41  45  49  4D  51  55  59  5D  61  65  69  6D  71  75 | 79  7D  |
+| Autumn | 42  46  4A  4E  52  56  5A  5E  62  66  6A  6E  72  76 | 7A  7E  |
+| Winter | 43  47  4B  4F  53  57  5B  5F  63  67  6B  6F  73  77 | 7B  7F  |
++--------+--------------------------------------------------------+---------+
+
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+| 19.4 Animals                                                                |
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+
+  In this section you can change the Happiness, Year, Championship, etc. of
+every animal you can get. The code for the cows & sheeps are the same, so you
+need to know the position of your animal if you want to change a specific
+animal, just look in the Farm Map if all of your barn animals are inside the
+barn, they will be sorted by the day you got it.
+
+  The ??? that the value has before the Max hearts are used to determine the
+age of the animals, it can go from 000 up to 3FF, that is +8 years.
+
+  1 year  = 078, 2 years = 0F0, 3 years = 168, 4 years = 1E0,
+  5 years = 258, 6 years = 2D0, 7 years = 348, 8 years = 3C0
+
+  If you add 400, then the animal will have a crown, meaning that has already
+won the contest. For making the Horse all growned up put 078 or more & for the
+dog put 03C or more; with this you can now be in the contest.
+
+  With the code of the days 'till produce Milk/Wool, you can make a cow milk
+nonstop if you fix the value to 0.
+
++-----------------------------------------------------------------------------+
+|  Animal     Code                    Value                                   |
++-----------------------------------------------------------------------------+
+| Chicken #1  02002A1C  [02005250]    001F5???   Max Hearts                   |
+|             02002A20  [02005254]    FFFF001C   Happy                        |
+|                                                                             |
+| Chicken #2  02002A4C  [02005280]    001F5???   Max Hearts                   |
+|             02002A50  [02005284]    FFFF001C   Happy                        |
+|                                                                             |
+| Chicken #3  02002A7C  [020052B0]    001F5???   Max Hearts                   |
+|             02002A80  [020052B4]    FFFF001C   Happy                        |
+|                                                                             |
+| Chicken #4  02002AAC  [020052E0]    001F5???   Max Hearts                   |
+|             02002AB0  [020052E4]    FFFF001C   Happy                        |
+|                                                                             |
+| Chicken #5  02002ADC  [02005310]    001F5???   Max Hearts                   |
+|             02002AE0  [02005314]    FFFF001C   Happy                        |
+|                                                                             |
+| Chicken #6  02002B0C  [02005340]    001F5???   Max Hearts                   |
+|             02002B10  [02005344]    FFFF001C   Happy                        |
+|                                                                             |
+| Chicken #7  02002B3C  [02005370]    001F5???   Max Hearts                   |
+|             02002B40  [02005374]    FFFF001C   Happy                        |
+|                                                                             |
+| Chicken #8  02002B6C  [020053A0]    001F5???   Max Hearts                   |
+|             02002B70  [020053A4]    FFFF001C   Happy                        |
++-----------------------------------------------------------------------------+
+| Barn Animal #1                                                              |
+|             02002C10  [02005444]    001F5???   Max Hearts                   |
+|             02002C14  [02005448]    FFFF001C   Happy                        |
+|             02002C2C  [02005460]    000X       Days 'till produce Milk/Wool |
+|                                                                             |
+| Barn Animal #2                                                              |
+|             02002C4C  [02005480]    001F5???   Max Hearts                   |
+|             02002C50  [02005484]    FFFF001C   Happy                        |
+|             02002C68  [0200549C]    000X       Days 'till produce Milk/Wool |
+|                                                                             |
+| Barn Animal #3                                                              |
+|             02002C88  [020054BC]    001F5???   Max Hearts                   |
+|             02002C8C  [020054C0]    FFFF001C   Happy                        |
+|             02002CA4  [020054D8]    000X       Days 'till produce Milk/Wool |
+|                                                                             |
+| Barn Animal #4                                                              |
+|             02002CC4  [020054F8]    001F5???   Max Hearts                   |
+|             02002CC8  [020054FC]    FFFF001C   Happy                        |
+|             02002CE0  [02005514]    000X       Days 'till produce Milk/Wool |
+|                                                                             |
+| Barn Animal #5                                                              |
+|             02002D00  [02005534]    001F5???   Max Hearts                   |
+|             02002D04  [02005538]    FFFF001C   Happy                        |
+|             02002D1C  [02005550]    000X       Days 'till produce Milk/Wool |
+|                                                                             |
+| Barn Animal #6                                                              |
+|             02002D3C  [02005570]    001F5???   Max Hearts                   |
+|             02002D40  [02005574]    FFFF001C   Happy                        |
+|             02002D58  [0200558C]    000X       Days 'till produce Milk/Wool |
+|                                                                             |
+| Barn Animal #7                                                              |
+|             02002D78  [020055AC]    001F5???   Max Hearts                   |
+|             02002D7C  [020055B0]    FFFF001C   Happy                        |
+|             02002D94  [020055C8]    000X       Days 'till produce Milk/Wool |
+|                                                                             |
+| Barn Animal #8                                                              |
+|             02002DB4  [020055E8]    001F5???   Max Hearts                   |
+|             02002DB8  [020055EC]    FFFF001C   Happy                        |
+|             02002DD0  [02005604]    000X       Days 'till produce Milk/Wool |
+|                                                                             |
+| Barn Animal #9                                                              |
+|             02002DF0  [02005624]    001F5???   Max Hearts                   |
+|             02002DF4  [02005628]    FFFF001C   Happy                        |
+|             02002E0C  [02005640]    000X       Days 'till produce Milk/Wool |
+|                                                                             |
+| Barn Animal #10                                                             |
+|             02002E2C  [02005660]    001F5???   Max Hearts                   |
+|             02002E30  [02005664]    FFFF001C   Happy                        |
+|             02002E48  [02005670]    000X       Days 'till produce Milk/Wool |
+|                                                                             |
+| Barn Animal #11                                                             |
+|             02002E68  [02005690]    001F5???   Max Hearts                   |
+|             02002E6C  [02005694]    FFFF001C   Happy                        |
+|             02002E84  [020056B8]    000X       Days 'till produce Milk/Wool |
+|                                                                             |
+| Barn Animal #12                                                             |
+|             02002EA4  [020056D8]    001F5???   Max Hearts                   |
+|             02002EA8  [020056DC]    FFFF001C   Happy                        |
+|             02002EC0  [020056F4]    000X       Days 'till produce Milk/Wool |
+|                                                                             |
+| Barn Animal #13                                                             |
+|             02002EE0  [02005714]    001F5???   Max Hearts                   |
+|             02002EE4  [02005718]    FFFF001C   Happy                        |
+|             02002EFC  [02005730]    000X       Days 'till produce Milk/Wool |
+|                                                                             |
+| Barn Animal #14                                                             |
+|             02002F1C  [02005750]    001F5???   Max Hearts                   |
+|             02002F20  [02005754]    FFFF001C   Happy                        |
+|             02002F38  [0200576C]    000X       Days 'till produce Milk/Wool |
+|                                                                             |
+| Barn Animal #15                                                             |
+|             02002F58  [0200578C]    001F5???   Max Hearts                   |
+|             02002F5C  [02005790]    FFFF001C   Happy                        |
+|             02002F74  [020057A8]    000X       Days 'till produce Milk/Wool |
+|                                                                             |
+| Barn Animal #16                                                             |
+|             02002F94  [020057C8]    001F5???   Max Hearts                   |
+|             02002F98  [020057CC]    FFFF001C   Happy                        |
+|             02002FB0  [020057E4]    000X       Days 'till produce Milk/Wool |
++-----------------------------------------------------------------------------+
+| Horse                                                                       |
+|             02002618  [02004E4C]    001F5???   Horse Max Hearts             |
++-----------------------------------------------------------------------------+
+| Dog                                                                         |
+|             02004260  [02006A94]    001F5???   Dog's Max Hearts             |
++-----------------------------------------------------------------------------+
+
+Max Food For Chicken
+              020029E9  [0200521D]    FF
+              020029EA  [0200521E]    FF
+
+Max food for Barn Animals
+              02002BC9  [020053FD]    F0
+              02002BCA  [020053FE]    FF
+              02002BCB  [020053FF]    1F
+
+
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+| 19.5 Spring mine & Winter mine                                              |
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+
+Mine Level
+
+  In order to put this codes you need to be in the mine (doesn't matter which)
+then find a stair going down (by digging), and when it ask you to go down, 
+put the code & then remove it, so the game won't freeze, if that happens just
+press a + b buttons or any combination that calls another screen to unfreeze 
+the game.
+
+ 02005CF8:XXXX
+[0200852C]
+
+ or
+
+ 0200   8:XXXX
+[020027FC]
+
+          0034 -> 0133 = Lv0 -> 255 for the Spring mine
+
+ Lv 1   = 0035
+ Lv 10  = 003E
+ Lv 100 = 0098
+ Lv 255 = 0133
+
+          0134 -> 0233 = Lv0 -> 255 for the Winter mine.
+
+ Lv 1   = 0135
+ Lv 10  = 013E
+ Lv 100 = 0198
+ Lv 255 = 0233
+
+
+Spring Mine (Goddess Gems)      Winter Mine (Kappa Gems)
+
+ Floor  60 = 0070                Floor   0 = 0134
+ Floor 102 = 009A                Floor  40 = 015C
+ Floor 123 = 00AF                Floor  60 = 0170
+ Floor 152 = 00CC                Floor  80 = 0184
+ Floor 155 = 00CF                Floor 120 = 01AC
+ Floor 171 = 00DF                Floor 140 = 01C0
+ Floor 190 = 00F2                Floor 160 = 01D4
+ Floor 202 = 00FE                Floor 180 = 01E8
+ Floor 222 = 0112                Floor 255 = 0233
+
+
+  To get the level you want, make the value one less than the level you want.
+Ex. To get to level 255 of the winter mine the value is 0232 instead of 0233.
+
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+| 19.6 Goddess TV Games                                                       |
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+
+  TV "Guess the number higher or lower" quiz mini-game. Just play, activate the
+code, and lose. Also works for the Rock-Paper-Scissors game in the Cottage
+House. If you set the value more than 64 then you'll NOT win the Book from H.G.
+
+ 02002240:XX
+[02004A74]
+
+Your Farm:
+
+          00 - 01 = Nothing
+               02 = Random piece of colored grass
+          03 - 09 = Buckwheat Flour
+          0A - 0E = Relaxation Tea Leaves
+          0F - 13 = Suntan Lotion
+          14 - 18 = Skin Lotion
+          19 - 1D = Facial Pack
+          1E - 27 = Perfume
+          28 - 31 = Dress
+          32 - 3B = Golden Lumber
+          3C - 45 = Fossil of Ancient Fish
+          46 - 4F = Pirate Treasure
+          50 - 59 = Recipe for Ketchup
+          5A - 63 = Recipe for French Fries
+               64 = Book from Harvest Goddess
+
+Cottage House:
+
+          00 - 01 = Nothing
+               02 = White Grass
+          03 - 09 = Mochi or soba noodless
+          0A - 13 = Elli Grass
+          14 - 1D = Alexandrite
+          1E - 27 = Pink Diamond
+          28 - 31 = Mythic Stone
+          32 - 3B = Record # 15
+          3C - 45 = Record # 14
+          46 - 4F = Record # 13
+          50 - 59 = Record # 12
+          5A - 63 = Record # 11
+               64 = Certificate of R-P-S
+
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+| 19.7 Fishing List                                                           |
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+
+  Since there's a lot of fish I don't know the size of each fish but you can
+put whatever you want, but try to be less than FF --> 2m 55cm, anyway nothing
+happens if you pass the regular size of the fish...
+
+===============================================================================
+Name                    Code       Results         Code       Maximum Size
+===============================================================================
+Pirate Fortune          02005258   XXXXXXXX        0200525C   XXXXXXXX
+                       [02007A8C]                 [02007A90]
+Fossil of Fish          02005260   XXXXXXXX        02005264   XXXXXXXX
+                       [02007A94]                 [02007A98]
+Power Berry             02005268   XXXXXXXX        0200526C   XXXXXXXX
+                       [02007A9C]                 [02007AA0]
+Message Bottle          02005270   XXXXXXXX        02005274   XXXXXXXX
+                       [02007AA4]                 [02007AA8]
+Empty Can               02005278   XXXXXXXX        0200527C   XXXXXXXX
+                       [02007AAC]                 [02007AB0]
+Branch                  02005280   XXXXXXXX        02005284   XXXXXXXX
+                       [02007AB4]                 [02007AB8]
+Fish Bones              02005288   XXXXXXXX        0200528C   XXXXXXXX
+                       [02007ABC]                 [02007AC0]
+Boots                   02005290   XXXXXXXX        02005294   XXXXXXXX
+                       [02007AC4]                 [02007AC8]
+===============================================================================
+Rock Trout              02005298   XXXXXXXX        0200529C   XXXXXXXX
+                       [02007ACC]                 [02007AD0]
+Scad                    020052A0   XXXXXXXX        0200529A   XXXXXXXX
+                       [02007AD4]                 [02007AD8]
+Fatminnow               020052A8   XXXXXXXX        020052AC   XXXXXXXX
+                       [02007ADC]                 [02007AE0]
+Cherry Salmon           020052B0   XXXXXXXX        020052B4   XXXXXXXX
+                       [02007AE4]                 [02007AE8]
+Pigfish                 020052B8   XXXXXXXX        020052BC   XXXXXXXX
+                       [02007AEC]                 [02007AF0]
+Sardine                 020052C0   XXXXXXXX        020052C4   XXXXXXXX
+                       [02007AF4]                 [02007AF8]
+Mountain Trout          020052C8   XXXXXXXX        020052CC   XXXXXXXX
+                       [02007AFC]                 [02007B00]
+Whitefish               020052D0   XXXXXXXX        020052D4   XXXXXXXX
+                       [02007B04]                 [02007B08]
+Eel                     020052D8   XXXXXXXX        020052DC   XXXXXXXX
+                       [02007B0C]                 [02007B10]
+Bitterling              020052E0   XXXXXXXX        020052E4   XXXXXXXX
+                       [02007B14]                 [02007B18]
+Bonito                  020052E8   XXXXXXXX        020052EC   XXXXXXXX
+                       [02007B1C]                 [02007B20]
+Fluke                   020052F0   XXXXXXXX        020052F4   XXXXXXXX
+                       [02007B24]                 [02007B28]
+Filefish                020052F8   XXXXXXXX        020052FC   XXXXXXXX
+                       [02007B2C]                 [02007B30]
+Golden Carp             02005300   XXXXXXXX        02005304   XXXXXXXX
+                       [02007B34]                 [02007B38]
+Silver Carp             02005308   XXXXXXXX        0200530C   XXXXXXXX
+                       [02007B3C]                 [02007B40]
+Kelp Bass               02005310   XXXXXXXX        02005314   XXXXXXXX
+                       [02007B44]                 [02007B48]
+Bighead                 02005318   XXXXXXXX        0200531C   XXXXXXXX
+                       [02007B4C]                 [02007B50]
+Salmon                  02005320   XXXXXXXX        02005324   XXXXXXXX
+                       [02007B54]                 [02007B58]
+Mackerel                02005328   XXXXXXXX        0200532C   XXXXXXXX
+                       [02007B5C]                 [02007B60]
+Needlefish              02005330   XXXXXXXX        02005334   XXXXXXXX
+                       [02007B64]                 [02007B68]
+Sp. Mackerel            02005338   XXXXXXXX        0200533C   XXXXXXXX
+                       [02007B6C]                 [02007B70]
+Saury Pike              02005340   XXXXXXXX        02005344   XXXXXXXX
+                       [02007B74]                 [02007B78]
+Dorado                  02005348   XXXXXXXX        0200534C   XXXXXXXX
+                       [02007B7C]                 [02007B80]
+Red Snaper              02005350   XXXXXXXX        02005354   XXXXXXXX
+                       [02007B84]                 [02007B88]
+Cod                     02005358   XXXXXXXX        0200535C   XXXXXXXX
+                       [02007B8C]                 [02007B90]
+Roach                   02005360   XXXXXXXX        02005364   XXXXXXXX
+                       [02007B94]                 [02007B98]
+Brown Hakeling          02005368   XXXXXXXX        0200536C   XXXXXXXX
+                       [02007B9C]                 [02007BA0]
+Rainbow Trout           02005370   XXXXXXXX        02005374   XXXXXXXX
+                       [02007BA4]                 [02007BA8]
+Herring                 02005378   XXXXXXXX        0200537C   XXXXXXXX
+                       [02007BAC]                 [02007BB0]
+Silver Carp             02005380   XXXXXXXX        02005384   XXXXXXXX
+                       [02007BB4]                 [02007BB8]
+Sandfish                02005388   XXXXXXXX        0200538C   XXXXXXXX
+                       [02007BBC]                 [02007BC0]
+Flounder                02005390   XXXXXXXX        02005394   XXXXXXXX
+                       [02007BC4]                 [02007BC8]
+Blowfish                02005398   XXXXXXXX        0200539C   XXXXXXXX
+                       [02007BCC]                 [02007BD0]
+Black Bass              020053A0   XXXXXXXX        020053A4   XXXXXXXX
+                       [02007BD4]                 [02007BD8]
+Yellowtail              020053A8   XXXXXXXX        020053AC   XXXXXXXX
+                       [02007BDC]                 [02007BE0]
+Bluegill                020053B0   XXXXXXXX        020053B4   XXXXXXXX
+                       [02007BE4]                 [02007BE8]
+Crucian Carp            020053B8   XXXXXXXX        020053BC   XXXXXXXX
+                       [02007BEC]                 [02007BF0]
+Greenling               020053C0   XXXXXXXX        020053C4   XXXXXXXX
+                       [02007BF4]                 [02007BF8]
+Tuna                    020053C8   XXXXXXXX        020053CC   XXXXXXXX
+                       [02007BFC]                 [02007C00]
+Ocean Sunfish           020053D0   XXXXXXXX        020053D4   XXXXXXXX
+                       [02007C04]                 [02007C08]
+Lionfish                020053D8   XXXXXXXX        020053DC   XXXXXXXX
+                       [02007C0C]                 [02007C10]
+Rockfish                020053E0   XXXXXXXX        020053E4   XXXXXXXX
+                       [02007C14]                 [02007C18]
+L. Salmon               020053E8   XXXXXXXX        020053EC   XXXXXXXX
+                       [02007C1C]                 [02007C20]
+Snakehead               020053F0   XXXXXXXX        020053F4   XXXXXXXX
+                       [02007C24]                 [02007C28]
+Lake smelt              020053F8   XXXXXXXX        020053FC   XXXXXXXX
+                       [02007C2C]                 [02007C30]
+===============================================================================
+Jp. Huchen              02005400   XXXXXXXX        02005404   XXXXXXXX
+                       [02007C34]                 [02007C38]
+Monkfish                02005408   XXXXXXXX        0200540C   XXXXXXXX
+                       [02007C3C]                 [02007C40]
+Catfish                 02005410   XXXXXXXX        02005414   XXXXXXXX
+                       [02007C44]                 [02007C48]
+Carp                    02005418   XXXXXXXX        0200541C   XXXXXXXX
+                       [02007C4C]                 [02007C50]
+Coelacanth              02005420   XXXXXXXX        02005424   XXXXXXXX
+                       [02007C54]                 [02007C58]
+Squid                   02005428   XXXXXXXX        0200542C   XXXXXXXX
+                       [02007C5C]                 [02007C60]
+===============================================================================
+
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+| 19.8 Affection Codes                                                        |
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+
+These codes are for how much the villagers and girls like you...
+
+02004324  [02006B58]    XX = Lillia
+02004338  [02006B6C]    XX = Rick
+02004364  [02006B98]    XX = Barley
+02004378  [02006BAC]    XX = May
+0200438C  [02006BC0]    XX = Saibara
+020043A4  [02006BD8]    XX = Gray
+020043B8  [02006BEC]    XX = Duke
+020043CC  [02006C00]    XX = Manna
+020043E0  [02006C14]    XX = Basil
+020043F4  [02006C28]    XX = Anna
+02004420  [02006C54]    XX = Thomas
+02004434  [02006C68]    XX = Harris
+02004448  [02006C7C]    XX = Ellen
+0200445C  [02006C90]    XX = Stu
+02004470  [02006CA4]    XX = Jeff
+02004484  [02006CB8]    XX = Sasha
+020044B0  [02006CE4]    XX = Doctor
+020044DC  [02006D10]    XX = Carter
+020044F0  [02006D24]    XX = Cliff
+02004504  [02006D38]    XX = Doug
+02004530  [02006D64]    XX = Kai
+02004544  [02006D78]    XX = Gotz
+0200455C  [02006D90]    XX = Zack
+02004570  [02006DA4]    XX = Won
+
+020045C4  [02006DF8]    XX = Lou (Ban)
+020045DC  [02006E10]    XX = Lu (Rubi)
+
+020045F0  [02006E24]    XX = Staid
+02004614  [02006E48]    XX = Nappy
+02004638  [02006E6C]    XX = Bold
+0200465C  [02006E90]    XX = Chef
+02004680  [02006EB4]    XX = Aqua
+020046A4  [02006ED8]    XX = Hoggy
+020046C8  [02006EFC]    XX = Timid
+
+02004358  [02006B8C]    XXXX = Popuri
+02004414  [02006C48]    XXXX = Mary
+020044A4  [02006CD8]    XXXX = Karen
+020044D0  [02006D04]    XXXX = Elli
+02004524  [02006D58]    XXXX = Ann
+020045A4  [02006DD8]    XXXX = Goddess
+
+  The villagers all have a max affection of 255 points = FF, and the girls all
+have a max affection of 65535 points = FFFF
+
+  If you change the view to 32 bits & change the affection of the girl like
+this: 02004524 ?xxFXXXX = Ann (or just add 4 digits)
+  then Ann will be married to you, but you have to change your husband name
+manually with the code at the beginning. It works with every girl you can 
+marry.
+
+  The first digit (?), I don't know what it does (maybe is for the Heart event
+counter), then the 2 following digits (xx), are for the affection of your
+rival, the 4th digit (F), if you set it to E or F then you'll marry that girl
+& the last 4 digits are for the affection from you to her.
+
+  The heart rank for the girls goes this way:
+
+Black Heart  =      0 -->  9,999 points              0000 --> 270F
+Purple Heart = 10,000 --> 19,999 points              2710 --> 4E1F
+Blue Heart   = 20,000 --> 29,999 points              4E20 --> 752F
+Green Heart  = 30,000 --> 39,999 points              7530 --> 9C3F
+Yellow Heart = 40,000 --> 49,999 points              9C40 --> C34F
+Orange Heart = 50,000 --> 59,999 points              C350 --> EA5F
+Red Heart    = 60,000 --> 65,535 points              EA60 --> FFFF
+
+
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+| 19.9 The sprites                                                            |
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+
+  With this codes you can make the sprites work anytime you like, if you put
+the code after you leave the house & then put the code hope for they to work
+if they normally won't work you will loose a day.
+
+02004602 [02006E36]    XX = Staid
+02004626 [02006E5A]    XX = Nappy
+0200464A [02006E7E]    XX = Bold
+0200466E [02006EA2]    XX = Chef
+02004692 [02006EC6]    XX = Aqua
+020046B6 [02006EEA]    XX = Hoggy
+020046DA [02006F0E]    XX = Timid
+
+===============================================================================
+                 7 days  6 days  5 days  4 days  3 days  2 days  1 day   0 days
+===============================================================================
+Animal Husbandry    1E      1A      16      12      0E      0A      06      02
+Watering            1D      19      15      11      0D      09      05      01
+Harvest             1C      18      14      10      0C      08      04      00
+===============================================================================
+Nothing     1F      1B      17      13      0F      0B      07      03
+===============================================================================
+
+  If you add 20, 40, 60, 80, A0, C0 or E0 to any value, the code will also work
+the same.
+
+
+  WORK Experience (up to FF)
+
+Staid
+
+020045FC  [02006E30]    XX  Harvest
+020045FD  [02006E31]    XX  Watering
+020045FE  [02006E32]    XX  Animal husbandry
+
+Nappy
+
+02004620  [02006E54]    XX  Harvest
+02004621  [02006E55]    XX  Watering
+02004622  [02006E56]    XX  Animal husbandry
+
+Bold
+
+02004644  [02006E78]    XX  Harvest
+02004645  [02006E79]    XX  Watering
+02004646  [02006E7A]    XX  Animal husbandry
+
+Chef
+
+02004668  [02006E9C]    XX  Harvest
+02004669  [02006E9D]    XX  Watering
+0200466A  [02006E9E]    XX  Animal husbandry
+
+Aqua
+
+0200468C  [02006EC0]    XX  Harvest
+0200468D  [02006EC1]    XX  Watering
+0200468E  [02006EC2]    XX  Animal husbandry
+
+Hoggy
+
+020046B0  [02006EE4]    XX  Harvest
+020046B1  [02006EE5]    XX  Watering
+020046B2  [02006EE6]    XX  Animal husbandry
+
+Timid
+
+020046D4  [02006F08]    XX  Harvest
+020046D5  [02006F09]    XX  Watering
+020046D6  [02006F0A]    XX  Animal husbandry
+
+  Note: You still need to play the Watering game to increase the # of times
+that you can water the seeds...
+
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+| 19.10 Storing items                                                         |
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+
+  If you want a special item in your bag or anywhere else, these codes will be
+very handy for you. The items are in the next section.
+
+  There are only listed 12 codes for the Fridge, Cabinet & Tool Box, you can
+hold up to 64 items, but having 64 codes would take a log space, if you need
+to fill his spaces just change the position of the items & put the code again
+
+
+Main Tool in bag    0200420C [02006A40]      01XX
+Main Item in bag    02004204 [02006A38]  XXXXXXXX (Don't know how it works)
+
+===============================================================================
+            Fridge     Cabinet/Shelf   Tool Box     Bag (Tools)   Bag (Items)
+===============================================================================
+Item  1   020027D4 XX   020028D4 XX   02002958 XX   02004238 XX   02004214 XXXX
+      #   020027D7 XX   020028D5 XX   02002959 XX   02004239 XX   -------------
+
+Item  2   020027D8 XX   020028D6 XX   0200295A XX   0200423A XX   02004218 XXXX
+      #   020027DB XX   020028D7 XX   0200295B XX   0200423B XX   -------------
+
+Item  3   020027DC XX   020028D8 XX   0200295C XX   0200423C XX   0200421C XXXX
+      #   020027DF XX   020028D9 XX   0200295D XX   0200423D XX   -------------
+
+Item  4   020027E0 XX   020028DA XX   0200295E XX   0200423E XX   02004220 XXXX
+      #   020027E3 XX   020028DB XX   0200295F XX   0200423F XX   -------------
+
+Item  5   020027E4 XX   020028DC XX   02002960 XX   02004240 XX   02004224 XXXX
+      #   020027E7 XX   020028DD XX   02002961 XX   02004241 XX   -------------
+
+Item  6   020027E8 XX   020028DE XX   02002962 XX   02004242 XX   02004228 XXXX
+      #   020027EB XX   020028DF XX   02002963 XX   02004243 XX   -------------
+
+Item  7   020027EC XX   020028E0 XX   02002964 XX   02004244 XX   0200422C XXXX
+      #   020027EF XX   020028E1 XX   02002965 XX   02004245 XX   -------------
+
+Item  8   020027F0 XX   020028E2 XX   02002966 XX   02004246 XX   02004230 XXXX
+      #   020027F3 XX   020028E3 XX   02002967 XX   02004247 XX   -------------
+
+Item  9   020027F4 XX   020028E4 XX   02002968 XX   -----------   -------------
+      #   020027F7 XX   020028E5 XX   02002969 XX   -----------   -------------
+
+Item 10   020027F8 XX   020028E6 XX   0200296A XX   -----------   -------------
+      #   020027FB XX   020028E7 XX   0200296B XX   -----------   -------------
+
+Item 11   020027FC XX   020028E8 XX   0200296C XX   -----------   -------------
+      #   020027FF XX   020028E9 XX   0200296D XX   -----------   -------------
+
+Item 12   02002800 XX   020028EA XX   0200296E XX   -----------   -------------
+      #   02002803 XX   020028EB XX   0200296F XX   -----------   -------------
+===============================================================================
+
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+| 19.11 Item Codes                                                            |
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+
+  With the Item codes you can have any item that exist in the game (except for
+the items that Doug & Kai sells & you just eat it...)
+
+  Wrapped Present = 125% of Normal Present (Even bad items), add +2 in the 
+value to any item that you want to wrap, so the item will now be wrapped.
+
+-------------------------------------------------------------------------------
+
+  This items are for the Fridge & Bag items.
+
+Fridge      --> 00 to AA
+Bag (items) --> 0000 to AA00
+
+-------------------------------------------------------------------------------
+ Name                  Value     Ann    Elli    Karen   Mary    Popuri  Goddess
+-------------------------------------------------------------------------------
+Turnip                  0000     100     100     100     100    -500     300
+Potato                  0100     100     100     300     100     100     300
+Cucumber                0200     100     100     300     100     100     300
+Strawberry              0300     300     500     100     100     500     500
+Cabbage                 0400     100     100     100     100     100     300
+Tomato                  0500     300     100     100     300     100     300
+Corn                    0600     100    -500     300     100     100     300
+Onion                   0700     100    -500     100     100     100     300
+Pumpkin                 0800     100     100     300     300    -500     300
+Pineapple               0900     300     100     100     300     300     500
+Eggplant                0A00     100     100     300     100    -500     300
+Carrot                  0B00     100     100     100     100     100     300
+Sweet Potato            0C00     100     100     300     100     100     300
+Spinach                 0D00     100     100     300     300     100     300
+Green Pepper            0E00     100    -500     300     300    -500     300
+Regular Quality Egg     0F00     300     100     300     100     500     300
+Good Quality Egg        1000     300     100     300     100     500     300
+High Quality Egg        1100     300     100     300     100     500     300
+Golden Egg              1200     300     100     300     100     500     300
+P Egg                   1300     300     100     300     100     500     300
+X Egg                   1400     300     100     300     100     500     300
+Spa-Boiled Egg          1500     500     100     300     100     100     100
+Mayonnaise (S)          1600     300     100     300     300     300     100
+Mayonnaise (M)          1700     300     100     300     300     300     100
+Mayonnaise (L)          1800     300     100     300     300     300     100
+Mayonnaise (G)          1900     300     100     300     300     300     100
+Mayonnaise (P)          1A00     300     100     300     300     300     100
+Mayonnaise (X)          1B00     300     100     300     300     300     100
+Milk (S)                1C00     300     500     100     100     300     300
+Milk (M)                1D00     300     500     100     100     300     300
+Milk (L)                1E00     300     500     100     100     300     300
+Milk (G)                1F00     300     500     100     100     300     300
+Milk (P)                2000     300     500     100     100     300     300
+Milk (X)                2100     300     500     100     100     300     300
+Cheese (S)              2200     300     100     500     300     100     100
+Cheese (M)              2300     300     100     500     300     100     100
+Cheese (L)              2400     300     100     500     300     100     100
+Cheese (G)              2500     300     100     500     300     100     100
+Cheese (P)              2600     300     100     500     300     100     100
+Cheese (X)              2700     300     100     500     300     100     100
+Apple                   2800     300     100    -500     300     500     100
+Honey                   2900     100     100    -500     300     300     100
+Bamboo Shoot            2A00     100     100     500     500     100     100
+Wild Grapes             2B00     100     100     100     500     100     100
+Mushroom                2C00     100     100     100     100     100     100
+Poisonous Mushroom      2D00    -800    -800    -800     500    -800    -500
+Truffle                 2E00     100     100     500     500     100     100
+Blue Grass              2F00    -500     300    -500     500    -800     100
+Green Grass             3000    -500     100    -500     100    -800     100
+Red Grass               3100    -800     100    -500     500    -800     100
+Yellow Grass            3200    -800    -500    -500     300    -800     100
+Orange Grass            3300    -500     100    -500     300    -800     100
+Purple Grass            3400    -500     300    -500     300    -800     100
+Indigo Grass            3500    -500     300    -500     300    -800     100
+Black Grass             3600    -500     300    -500     500    -800     100
+White Grass             3700    -500     500    -500     500    -800     100
+Queen of the Night      3800     800     800     800     800     800    Nothing
+Bodigizer               3900    -500     100    -500     100    -800    -500
+Bodigizer XL            3A00    -500     100    -500     100    -800    -500
+Turbojolt               3B00    -500     100    -500     500    -800    -500
+Turbojolt XL            3C00    -500     100    -500     500    -800    -500
+Wine                    3D00     100    -500     500     100    -800    -500
+Grape Juice             3E00     300     300    -500     500     300    -500
+Rice Ball               3F00     300     100     100     100     100    -500
+Bread                   4000     300     100     100     100     300    -500
+Oil                     4100     100     100     100     100     100    -500
+Flour                   4200     100     100     100     100     300    -500
+Curry Powder            4300     100     100     100     100     100    -500
+Muffin Mix              4400     300     500     100     500     100    -500
+Chocolate               4500     500     300    -500     500     500    -500
+Relaxation Tea Leaves   4600     100     300     100     500     300     300
+SUGDW Apple             4700     300     100    -500     300     500     100
+HMSGB Apple             4800     300     100    -500     300     500     100
+AEPFE Apple             4900     300     100    -500     300     500     100
+Buckwheat Flour         4A00     300     100    -500     100    -500    -500
+Wild Grape Wine         4B00     100    -500     500     100    -800    -500
+Salad                   4C00     500     300     300     100     100    -500
+Curry Rice              4D00     500     100     100    -500     100    -500
+Stew                    4E00     500     100     100     100     300    -500
+Miso Soup               4F00     300     100     300     100     100    -500
+Stir Fry                5000     500    -500     300     100     100    -500
+Fried Rice              5100     500    -500     100    -500     100    -500
+Savory Pancake          5200     500     100     100    -500     300    -500
+Sandwich                5300     500     300     100     100     500    -500
+Fruit Juice             5400     300     100     100     100     500    -500
+Vegetable Juice         5500     300     300     100     800    -500    -500
+Mixed Juice             5600     300     100     100     100    -500    -500
+Fruit Latte             5700     100     100     100     100     100    -500
+Vegetable Latte         5800     300     300     100     800    -500    -500
+Mixed Latte             5900     300     300    -500     100    -500    -500
+Strawberry Smoothie     5A00     500     500    -500     300     500    -500
+Strawberry Jam          5B00     300     300    -500     300     500    -500
+Tomato Juice            5C00     300    -500     100     300    -500    -500
+Pickled Turnip          5D00     300     100     300    -500    -500    -500
+French Fries            5E00     300     100     800     100     300    -500
+Pickles                 5F00     300     100     300    -500     100    -500
+Ketchup                 6000     100    -500     100     100     300    -500
+Popcorn                 6100     300     300     800     100     300    -500
+Corn Flakes             6200     300     100     100     100     100    -500
+Baked Corn              6300     100     100     300     100     300    -500
+Pineapple Juice         6400     300     100     100     300     300    -500
+Pumpkin Pudding         6500     500     300    -500     300     300    -500
+Pumpkin Stew            6600     100     100     300     300    -500    -500
+Happy Eggplant          6700     300     100     300    -500    -500    -500
+Sweet Potatoes          6800     300     300    -500     100     300    -500
+Baked Sweet Potato      6900     500     100    -500     100     100    -500
+Greens                  6A00     300     300     300     100     100    -500
+Scrambled Eggs          6B00     300    -500     300     100     800    -500
+Omelet                  6C00     500    -500     100     100     800    -500
+Omelet Rice             6D00     500    -500     100     100     800    -500
+Boiled Egg              6E00     300     100     100     100     500    -500
+Hot Milk                6F00     100     800     100     100     300    -500
+Butter                  7000     100     100     300    -500     100    -500
+Cheese Cake             7100     500     300    -500     300     100    -500
+Cheese Fondue           7200     800     100     300     300     100    -500
+Apple Pie               7300     500     300    -500     300     500    -500
+Apple Jam               7400     100     300    -500     300     500    -500
+Apple Soufflé           7500     300     100    -500     300     500    -500
+Mushroom Rice           7600     500     100     100     300     100    -500
+Bamboo Rice             7700     500     100     100     300     300    -500
+Truffle Rice            7800     800     100     100     300     100    -500
+Sushi                   7900     500     100     100     100     100    -500
+Jam Bun                 7A00     300     100    -500     300     100    -500
+Dinner Roll             7B00     300     100     100     100     100    -500
+Raisin Bread            7C00     300     100    -500     500     100    -500
+Grape Jam               7D00     100     300    -500     300     300    -500
+Curry Bread             7E00     500     100     100    -500     100    -500
+Sashimi                 7F00     300     300     500     100     100    -500
+Grilled Fish            8000     100     300     300     100     100    -500
+Sashimi Mix             8100     300     300     100     100     300    -500
+Pizza                   8200     300     100     800     100     100    -500
+Noodles                 8300     300     100     100     100     100    -500
+Curry Noodles           8400     300     100     100     100     100    -500
+Tempura Noodles         8500     500     100     100     100     100    -500
+Fried Noodles           8600     500     100     100     100     100    -500
+Buckwheat Noodles       8700     500     100     100     100     100    -500
+Tempura Buckwheat Noodles 8800   500     100     100     100     100    -500
+Fried Noodles           8900     300     100     300     100     100    -500
+Buckwheat Chips         8A00     300     100    -500    -500     100    -500
+Cookies                 8B00     300     300    -500     100     500    -500
+Chocolate Cookies       8C00     300     300    -500     500     500    -500
+Tempura                 8D00     300     100     500     100     100    -500
+Ice Cream               8E00     500     300    -500     100     500    -500
+Cake                    8F00     800     300    -500     100     500    -500
+Chocolate Cake          9000     500     300    -500     500     500    -500
+Relaxation Tea          9100     300     300     100     800     500    -500
+Toast                   9200     300     100     100     100     300    -500
+French Toast            9300     300     300     100     100     300    -500
+Pudding                 9400     500     300     100     100     500    -500
+Mountain Stew           9500     300     300     100     100     100    -500
+Moon Dumplings          9600     100     800     100     300     100    -500
+Rice Cake               9700     500     300     100     100    -500    -500
+Roasted Rice Cake       9800     500     300     100     100    -500    -500
+Elli Leaves             9900     100     500    -500     500     100    -500
+Failure                 9A00    -500    -800    -800    -500    -800    -500
+Failure                 9B00    -500    -800    -800    -500    -800    -500
+Failure                 9C00    -500    -800    -800    -500    -800    -500
+Failure                 9D00    -500    -800    -800    -500    -800    -500
+Failure                 9E00    -500    -800    -800    -500    -800    -500
+Failure                 9F00    -500    -800    -800    -500    -800    -500
+Small Fish              A000     100     300     100     100     100     100
+Medium Fish             A100     100     300     100     100     100     100
+Large Fish              A200     300     300     100     100     100     100
+Toasted Rice Ball       A300     300     100     100     100     100    -500
+Tempura Rice            A400     300     100     500     100     100    -500
+Egg Over Rice           A500     300     100     300     100     500    -500
+Rice Gruel              A600     300     100     100     100     100    -500
+Pancakes                A700     800     300    -500     100     500    -500
+Fish Sticks             A800     100     300     100     100     100    -500
+Candied Potato          A900     300     300    -500     100     300    -500
+Potato Pancakes         AA00     100     100     300     100     100    -500
+-------------------------------------------------------------------------------
+
+  This Items are for the Cabinet/Shelf & Bag Items
+
+Cabinet     --> 00 to 5E
+Bag (Items) --> 0001 to 5E01
+
+Moon Drop Grass         0001     100     100     300     100     100     300
+Pink Cat Grass          0101     100     500     300     100     300     300
+Blue Magic Grass        0201     100     500     300     100     100     300
+Red Magic Grass         0301     100     800     300     100     100     300
+Toy Flower              0401     100     500     300     100     300     300
+Wool (S)                0501     100     100    -800     300     100     100
+Wool (M)                0601     100     100    -800     300     100     100
+Wool (L)                0701     100     100    -800     300     100     100
+Wool (G)                0801     100     100    -800     300     100     100
+Wool (P)                0901     100     100    -800     300     100     100
+Wool (X)                0A01     100     100    -800     300     100     100
+Yarn (S)                0B01     100     100    -800     300     300     100
+Yarn (M)                0C01     100     100    -800     300     300     100
+Yarn (L)                0D01     100     100    -800     300     300     100
+Yarn (G)                0E01     100     100    -800     300     300     100
+Yarn (P)                0F01     100     100    -800     300     300     100
+Yarn (X)                1001     100     100    -800     300     300     100
+Junk Ore                1101    -800    -500    -800    -500    -500    -500
+Copper Ore              1201    -800     100    -800     100    -500    -500
+Silver Ore              1301    -800     100    -800     100    -500    -500
+Gold Ore                1401    -800     100    -800     100    -500    -500
+Mystrile Ore            1501    -800     100    -800     100    -500    -500
+Orichalc Ore            1601    -800     100    -800     100    -500    -500
+Adamantite Ore          1701    -800     100    -800     100     100    -500
+Moon Stone              1801    -800     100    -800     100    -500    -500
+Sand Rose               1901    -800     100    -800     100    -500    -500
+Pink Diamond            1A01     500     500     500     500     500    -500
+Alexandrite             1B01    -800     100    -800     100    -500    -500
+Mythic Stone            1C01    -800     100    -800     100    -500    -500
+Diamond                 1D01     500     500     500     500     500    -500
+Emerald                 1E01     300     300     300     300     300    -500
+Ruby                    1F01     300     300     300     300     300    -500
+Topaz                   2001     300     300     300     300     300    -500
+Peridot                 2101     100     100     100     100     100    -500
+Fluorite                2201    -800     100    -500     100    -500    -500
+Agate                   2301    -800     100    -500     100    -500    -500
+Amethyst                2401     300     300     300     300     300    -500
+Harvest Goddess Jewel   2501     Can't Give
+Kappa Jewel             2601     Can't Give
+Jewel of Truth          2701     Can't Give
+Spring Sun              2801     100     100     100     100     100     100
+Summer Sun              2901     100     100     100     100     100     100
+Autumn Sun              2A01     100     100     100     100     100     100
+Winter Sun              2B01     100     100     100     100     100     100
+Bracelet                2C01     300     500     300     300     500    -500
+Necklace                2D01     300     500     300     300     500    -500
+Earrings                2E01     300     500     300     300     500    -500
+Broach                  2F01     300     500     300     300     500    -500
+Weeds                   3001    -800    -800    -800    -800     100    -500
+Stones                  3101    -800    -800    -800    -800    -800    -500
+Branches                3201    -800    -800    -800    -800    -800    -500
+Recipe for French Fries 3301     300     500    -800     500    -800    -500
+Recipe for Ketchup      3401     300     500     100     500    -800    -500
+Ball                    3501     100     100     100    -800    -500        
+Pirate Treasure         3601    -800    -800    -800    -800    -800    -800
+Fossil of Ancient Fish  3701    -800    -800    -800    -800    -800    -800
+Empty Can               3801    -800    -800    -800    -800    -800    -800
+Boots                   3901    -800    -800    -800    -800    -800    -800
+Fish Bones              3A01    -800    -800    -800    -800    -800    -800
+Karen's Wine            3B01     Can't Give
+Popuri's Mud Ball       3C01     Can't Give
+Ann's Music Box         3D01     Can't Give
+Mary's Great Book       3E01     Can't Give
+Elli's Pressed Flower   3F01     Can't Give
+Album 1                 4001     Can't Give                                0
+Album 2                 4101     Can't Give                                0
+Album 3                 4201     Can't Give                                0
+Album 4                 4301     Can't Give                                0
+Album 5                 4401     Can't Give                                0
+Album 6                 4501     Can't Give                                0
+Album 7                 4601     Can't Give                                0
+Album 8                 4701     Can't Give                                0
+Album 9                 4801     Can't Give                                0
+Album 10                4901     Can't Give                                0
+Album 11                4A01     Can't Give                                0
+Album 12                4B01     Can't Give                                0
+Album 13                4C01     Can't Give                                0
+Album 14                4D01     Can't Give                                0
+Album 15                4E01     Can't Give                                0
+Band-Aid                4F01     800     800     800     800     800    Nothing
+Book from H.G.          5001     Can't Give                                0
+Perfume                 5101     500     500     500     800     500    -500
+Photo                   5201     Can't Give                                0
+Plant Encyclopedia      5301     800     800     800     800     800       0
+Invitation              5401     Can't Give                                0
+Dress                   5501     300     500     300     300     500    -500
+Facial Pack             5601     300     500     300     300     500    -500
+Skin Lotion             5701     300     500     300     300     500    -500
+Sunblock                5801     300     500     300     300     500    -500
+Lumber                  5901    -800    -800    -800    -500    -800    -500
+Golden Lumber           5A01    -800    -800    -800    -800    -800    -800
+Animal Fodder           5B01    -800    -800    -800    -500    -800    -500
+Chicken Feed            5C01    -800    -800    -800    -500    -800    -500
+Certificate of R-P-S    5D01     Can't Give                                0
+Frisbee                 5E01     Can't Give
+-------------------------------------------------------------------------------
+
+  This items are for the Tool Box & Tool Bag
+
+Tool Box --> 00 to 50
+Tool Bag --> 00 to 50
+
+Sickle                    00              Copper Sickle             01
+Silver Sickle             02              Gold Sickle               03
+Mystrile Sickle           04              Cursed Sickle             05
+Blessed Sickle            06              Mythic Sickle             07
+
+Hoe                       08              Copper Hoe                09
+Silver Hoe                0A              Gold Hoe                  0B
+Mystrile Hoe              0C              Cursed Hoe                0D
+Blessed Hoe               0E              Mythic Hoe                0F
+
+Axe                       10              Copper Axe                11
+Silver Axe                12              Gold Axe                  13
+Mystrile Axe              14              Cursed Axe                15
+Blessed Axe               16              Mythic Axe                17
+
+Hammer                    18              Copper Hammer             19
+Silver Hammer             1A              Gold Hammer               1B
+Mystrile Hammer           1C              Cursed Hammer             1D
+Blessed Hammer            1E              Mythic Hammer             1F
+
+Watering Can              20              Copper Watering Can       21
+Silver Watering Can       22              Gold Watering Can         23
+Mystrile Watering Can     24              Cursed Watering Can       25
+Blessed Watering Can      26              Mythic Watering Can       27
+
+Fishing Rod               28              Copper Fishing Rod        29
+Silver Fishing Rod        2A              Gold Fishing Rod          2B
+Mystrile Fishing Rod      2C              Cursed Fishing Rod        2D
+Blessed Fishing Rod       2E              Mythic Fishing Rod        2F
+
+Cow Miracle Potion        30              Sheep Miracle Potion      31
+
+Turnip Seeds              32              Potato Seeds              33
+Cucumber Seeds            34              Strawberry Seeds          35
+Cabbage Seeds             36              Tomato Seeds              37
+Corn Seeds                38              Onion Seeds               39
+Pumpkin Seeds             3A              Pineapple Seeds           3B
+Eggplant Seeds            3C              Carrot Seeds              3D
+Sweet Potato Seeds        3E              Spinach Seeds             3F
+Green Pepper Seeds        40              Grass Seeds               41
+Moon Drop Seeds           42              Pink Cat Seeds            43
+Magic Seeds               44              Toy Flower Seeds          45
+
+Brush                     46              Milker                    47
+Shears                    48              Bell                      49
+Animal Medicine           4A              Blue Feather              4B
+
+Pedometer                 4C              Teleport Stone            4D
+Gem of the Goddess        4E              Gem of the Kappa          4F
+Gem of the Truth          50
+
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+| 19.12 Shipping items codes                                                  |
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+
+  With this codes you will have 9999 of any item you can ship, so the next 
+item you ship the goddess appears, you can change the value to any other 
+number, just don't change the 8 at the beginning, because the 8 is used to 
+let the item appear in the shipping list. 
+
+  The max item shipped that you can have is 1,000,000,000 or BB9ACA00. If you 
+just want to have the list completed just put 80000000
+
++-------------------------------------------------------------+
+|  Code                 Value           Item                  |
++-------------------------------------------------------------+
+| 02002630 [02004E64]  8000270F        Turnip                 |
+| 02002634 [02004E68]  8000270F        Potato                 |
+| 02002638 [02004E6C]  8000270F        Cucumber               |
+| 0200263C [02004E70]  8000270F        Cabbage                |
+| 02002640 [02004E74]  8000270F        Strawberries           |
+| 02002644 [02004E78]  8000270F        Tomato                 |
+| 02002648 [02004E7C]  8000270F        Corn                   |
+| 0200264C [02004E80]  8000270F        Onion                  |
+| 02002650 [02004E84]  8000270F        Pineapple              |
+| 02002654 [02004E88]  8000270F        Pumpkin                |
+| 02002658 [02004E8C]  8000270F        Eggplant               |
+| 0200265C [02004E90]  8000270F        Carrot                 |
+| 02002660 [02004E94]  8000270F        Sweet Potato           |
+| 02002664 [02004E98]  8000270F        Green Pepper           |
+| 02002668 [02004E9C]  8000270F        Spinach                |
+| 0200266C [02004EA0]  8000270F        Regular Quality Egg    |
+| 02002670 [02004EA4]  8000270F        Good Quality Egg       |
+| 02002674 [02004EA8]  8000270F        High Quality Egg       |
+| 02002678 [02004EAC]  8000270F        Golden Egg             |
+| 0200267C [02004EB0]  8000270F        P Egg                  |
+| 02002680 [02004EB4]  8000270F        X Egg                  |
+| 02002684 [02004EB8]  8000270F        Spa-Boiled Egg         |
+| 02002688 [02004EBC]  8000270F        Mayonnaise (s)         |
+| 0200268C [02004EC0]  8000270F        Mayonnaise (m)         |
+| 02002690 [02004EC4]  8000270F        Mayonnaise (l)         |
+| 02002694 [02004EC8]  8000270F        Mayonnaise (g)         |
+| 02002698 [02004ECC]  8000270F        Mayonnaise (p)         |
+| 0200269C [02004ED0]  8000270F        Mayonnaise (x)         |
+| 020026A0 [02004ED4]  8000270F        Milk (s)               |
+| 020026A4 [02004ED8]  8000270F        Milk (m)               |
+| 020026A8 [02004EDC]  8000270F        Milk (l)               |
+| 020026AC [02004EE0]  8000270F        Milk (g)               |
+| 020026B0 [02004EE4]  8000270F        Milk (p)               |
+| 020026B4 [02004EE8]  8000270F        Milk (x)               |
+| 020026B8 [02004EEC]  8000270F        Cheese (s)             |
+| 020026BC [02004EF0]  8000270F        Cheese (m)             |
+| 020026C0 [02004EF4]  8000270F        Cheese (l)             |
+| 020026C4 [02004EF8]  8000270F        Cheese (g)             |
+| 020026C8 [02004EFC]  8000270F        Cheese (p)             |
+| 020026CC [02004F00]  8000270F        Cheese (x)             |
+| 020026D0 [02004F04]  8000270F        Apple                  |
+| 020026D4 [02004F08]  8000270F        SUGDW Apple            |
+| 020026D8 [02004F0C]  8000270F        HMSGB Apple            |
+| 020026DC [02004F10]  8000270F        AEPFE Apple            |
+| 020026E0 [02004F14]  8000270F        Honey                  |
+| 020026E4 [02004F18]  8000270F        Bamboo Shoots          |
+| 020026E8 [02004F1C]  8000270F        Wild Grapes            |
+| 020026EC [02004F20]  8000270F        Mushroom               |
+| 020026F0 [02004F24]  8000270F        Poisonous Mushroom     |
+| 020026F4 [02004F28]  8000270F        Truffle                |
+| 020026F8 [02004F2C]  8000270F        Blue Grass             |
+| 020026FC [02004F30]  8000270F        Green Grass            |
+| 02002700 [02004F34]  8000270F        Red Grass              |
+| 02002704 [02004F38]  8000270F        Yellow Grass           |
+| 02002708 [02004F3C]  8000270F        Orange Grass           |
+| 0200270C [02004F40]  8000270F        Purple Grass           |
+| 02002710 [02004F44]  8000270F        Indigo Grass           |
+| 02002714 [02004F48]  8000270F        Black Grass            |
+| 02002718 [02004F4C]  8000270F        White Grass            |
+| 0200271C [02004F50]  8000270F        Chocolate              |
+| 02002720 [02004F54]  8000270F        Relax Tea Leaves       |
+| 02002724 [02004F58]  8000270F        Small Fish             |
+| 02002728 [02004F5C]  8000270F        Medium Fish            |
+| 0200272C [02004F60]  8000270F        Large Fish             |
+| 02002730 [02004F64]  8000270F        Pirate Treasure        |
+| 02002734 [02004F68]  8000270F        Fossil of Fish         |
+| 02002738 [02004F6C]  8000270F        Red Magic Grass        |
+| 0200273C [02004F70]  8000270F        Wool (s)               |
+| 02002740 [02004F74]  8000270F        Wool (m)               |
+| 02002744 [02004F78]  8000270F        Wool (l)               |
+| 02002748 [02004F7C]  8000270F        Wool (g)               |
+| 02002748 [02004F80]  8000270F        Wool (p)               |
+| 0200274C [02004F84]  8000270F        Wool (x)               |
+| 02002750 [02004F88]  8000270F        Yarn (s)               |
+| 02002754 [02004F8C]  8000270F        Yarn (m)               |
+| 02002758 [02004F90]  8000270F        Yarn (l)               |
+| 0200275C [02004F94]  8000270F        Yarn (g)               |
+| 02002760 [02004F98]  8000270F        Yarn (p)               |
+| 02002764 [02004F9C]  8000270F        Yarn (x)               |
+| 02002768 [02004FA0]  8000270F        Bracelet               |
+| 0200276C [02004FA4]  8000270F        Necklace               |
+| 02002770 [02004FA8]  8000270F        Earrings               |
+| 02002774 [02004FAC]  8000270F        Broach                 |
+| 02002778 [02004FB0]  8000270F        Junk ore               |
+| 0200277C [02004FB4]  8000270F        Copper                 |
+| 02002780 [02004FB8]  8000270F        Silver                 |
+| 02002784 [02004FBC]  8000270F        Gold                   |
+| 02002788 [02004FC0]  8000270F        Mystrile               |
+| 0200278C [02004FC4]  8000270F        Orichalc               |
+| 02002790 [02004FC8]  8000270F        Adamantite             |
+| 02002794 [02004FCC]  8000270F        Mythic Stone           |
+| 02002798 [02004FD0]  8000270F        Pink Diamond           |
+| 0200279C [02004FD4]  8000270F        Alexandrite            |
+| 020027A0 [02004FD8]  8000270F        Moon Stone             |
+| 020027A4 [02004FDC]  8000270F        Sand Rose              |
+| 020027A8 [02004FE0]  8000270F        Diamond                |
+| 020027AC [02004FE4]  8000270F        Emerald                |
+| 020027B0 [02004FE8]  8000270F        Ruby                   |
+| 020027B4 [02004FEC]  8000270F        Topaz                  |
+| 020027B8 [02004FF0]  8000270F        Peridot                |
+| 020027BC [02004FF4]  8000270F        Fluorite               |
+| 020027C0 [02004FF8]  8000270F        Agate                  |
+| 020027C4 [02004FFC]  8000270F        Amethys                |
++-------------------------------------------------------------+
+
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+| 19.13 Other codes                                                           |
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+
+  In this section I put all the codes that are so small that couldn't had 
+there own space.
+
+-------------------------------------------------------------------------------
+Money Code         02004080   XXXXXXXX (up to 3B9ACA00 --> $ 1,000,000,000)
+                  [020068B4]
+
+Horse Race Medals  020065AC   XXXX     (up to 270F --> 9999 medals)
+                  [02008DE0]
+
+Frisbee Record     02004274   XXXX     (up to 03E7 --> 99m 90cm)
+                  [02006AA8]
+
+Frisbee Gauge?!    02004276   XX       (up to FF?)
+                  [02006AAA]
+
+Confession         020047A1   XX       (00 --> Haven't confessed)
+                  [02006FD5]
+------------------------------------------------------------------------------
+
+Power Berries      020041F4   ?X
+                  [02006A28]
+
+? --> If you have the Blue Berry
+X --> # of Red Berries (Normally up to 10=A, but you can have 15=F)
+
+  If ? is even, then you don't have the blue berry; if ? is odd, then you'll
+have the blue berry (The # doesn't matter)
+
+
+ 020041F5  [02006A29]    XX --> Stamina    (7D to 00)     +80 = same
+ 020041F6  [02006A2A]    XX --> Fatigue    (00 to 64)     +80 = same
+
+-------------------------------------------------------------------------------
+
+020041DC [02006A10]   XXXX????       Hoe
+020041E0 [02006A14]   XXXX????       Sickle
+020041E4 [02006A18]   XXXX????       Axe
+020041E8 [02006A1C]   XXXX????       Hammer
+020041EC [02006A20]   XXXX????       Water Can
+020041F0 [02006A24]   XXXX????       Fishing Rod
+
+  The 1st 4 digits are for the level of the tool & the other 4 digits are for
+the Percentage of use. If you just want to change the percentage, instead of
+using 8 digits, just put 4
+
+                      XXXX0000 ??? Tool   0 % Used
+                      XXXX1770 ??? Tool 100 % Used
+                      XXXX4650 ??? Tool 200 % Used
+                      XXXX8CA0 ??? Tool 300 % Used
+                      XXXXFFFF ??? Tool 400 % Used
+-------------------------------------------------------------------------------
+
+Pedometer Code
+
+020041F8 [02006A2C]   XXXXXXXX (Stops at 1,000,000,000), just 1 step before 
+the goddess appears
+
+                      00001387         9,999 steps
+                      0000C34F        99,999 steps
+                      0007A11F       999,999 steps
+                      004C4B3F     9,999,999 steps
+                      02FAF07F    99,999,999 steps
+                      1DCD64FF   999,999,999 steps
+-------------------------------------------------------------------------------
+
+Farm Field (43x25 spaces)
+
+Square (1,1)   02002FB4 XXXXXXXX          Square (2,1)  02002FB8 XXXXXXXX
+Square (3,1)   02002FBC XXXXXXXX          Square (4,1)  02002FC0 XXXXXXXX
+Square (5,1)   02002FC4 XXXXXXXX          Square (6,1)  02002FC8 XXXXXXXX
+Square (7,1)   02002FCC XXXXXXXX          Square (8,1)  02002FD0 XXXXXXXX
+Square (9,1)   02002FD4 XXXXXXXX          Square (10,1) 02002FD8 XXXXXXXX
+Square (11,1)  02002FDC XXXXXXXX          Square (12,1) 02002FE0 XXXXXXXX
+Square (13,1)  02002FE4 XXXXXXXX          Square (14,1) 02002FE8 XXXXXXXX
+Square (15,1)  02002FEC XXXXXXXX          Square (16,1) 02002FF0 XXXXXXXX
+Square (17,1)  02002FF4 XXXXXXXX          Square (18,1) 02002FF8 XXXXXXXX
+Square (19,1)  02002FFC XXXXXXXX          Square (20,1) 02003000 XXXXXXXX
+Square (21,1)  02003004 XXXXXXXX          Square (22,1) 02003008 XXXXXXXX
+Square (23,1)  0200300C XXXXXXXX          Square (24,1) 02003010 XXXXXXXX
+Square (25,1)  02003014 XXXXXXXX          Square (26,1) 02003018 XXXXXXXX
+Square (27,1)  0200301C XXXXXXXX          Square (28,1) 02003020 XXXXXXXX
+Square (29,1)  02003024 XXXXXXXX          Square (30,1) 02003028 XXXXXXXX
+Square (31,1)  0200302C XXXXXXXX          Square (32,1) 02003030 XXXXXXXX
+Square (33,1)  02003034 XXXXXXXX          Square (34,1) 02003038 XXXXXXXX
+Square (35,1)  0200303C XXXXXXXX          Square (36,1) 02003040 XXXXXXXX
+Square (37,1)  02003044 XXXXXXXX          Square (38,1) 02003048 XXXXXXXX
+Square (39,1)  0200304C XXXXXXXX          Square (40,1) 02003050 XXXXXXXX
+Square (41,1)  02003054 XXXXXXXX          Square (42,1) 02003058 XXXXXXXX
+Square (43,1)  0200305C XXXXXXXX
+...
+Square (1,2)   02003060 XXXXXXXX          Square (2,2)  02003064 XXXXXXXX
+Square (1,3)   0200310C XXXXXXXX          Square (2,3)  02003104 XXXXXXXX
+...
+Square (43,25) 0200407C XXXXXXXX
+
+02005BF0
+
+                        00000000    Cleared ground
+                        00000001    Hoed ground
+                        00000002    Hoed ground & watered
+
+                        00000101    Turnip seeds
+                        00000105    Potato seeds
+                        00000109    Cucumber seeds
+                        0000010D    Strawberry seeds
+                        00000111    Cabbage seeds
+                        00000115    Tomato seeds
+                        00000119    Corn seeds
+                        0000011D    Onion seeds
+                        00000121    Pumpkin seeds
+                        00000125    Pineapple seeds
+                        00000129    Eggplant seeds
+                        0000012D    Carrot seeds
+                        00000131    Sweet potato seeds
+                        00000135    Spinach seeds
+                        00000139    Green pepper seeds
+                        0000013D    Moon drop seeds
+                        00000141    Pink cat seeds
+                        00000145    BLUE Magic seeds
+                        00000149    RED  Magic seeds
+                        0000014D    Toy flower seeds
+                        00000151    Grass seeds
+
+                        00020854    Weeds
+                        00020858    Small Rock
+                        0002085C    Branches
+                        00020860    Lumber
+                        00020864    Rotten lumber
+                        00020868    Gold lumber
+
+                        0002086C    Lv2 wood (upper left)
+                        00020870    Lv2 wood (upper right)
+                        00020874    Lv2 wood (lower left)
+                        00020878    Lv2 wood (lower right)
+
+                        0002087C    Lv2 stone (upper left)
+                        00020880    Lv2 stone (upper right)
+                        00020884    Lv2 stone (lower left)
+                        00020888    Lv2 stone (lower right)
+
+                        0002088C    Lv3 stone (upper left)
+                        00020890    Lv3 stone (upper right)
+                        00020894    Lv3 stone (lower left)
+                        00020898    Lv3 stone (lower right)
+-------------------------------------------------------------------------------
+Your Child
+
+020042D4 ???XX??? Child's Age
+020042B8 XX Child's affection
+02004204 ???
+0200426C ???
+-------------------------------------------------------------------------------
+
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+| 19.14 Text codes                                                            |
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+
+  These "Codes" are stageless, it's just to see the text of the game, you need
+to see it with the Memory viewer.
+
+
+082AC140        Begins the text of the game
+084F905C        Ends the text of the game
+
+
+                    TV channels
+
+08412F8C        Card Collector Chisato
+08418260        My Dear Princess
+08421C21        Dueling Chefs
+08424A08        Fairy & Me
+0843A1CC        Fishing Hour
+0843D1C0        Races in the F-3.14 MGP
+08451940        Goddess Rock-Paper-Scissors game
+084533C2        New Year's game shop (Guess the #)
+0845406A        Mechabot Ultror (Summertime reprise)
+0845F181        Program Schedule
+0845F640        Fairy & Me... He Said (Reprise)
+084686A8        Life on the Farm ADVANCE
+0847C7A4        Life on the Farm BEGINNER
+0848B65C        Aaron Changes
+084B0504        Mineral Town Friends
+084B9D68        TV Shopping Network
+084BC668        Star Lily, Bandit Girl
+084C521C        Mine Research Group
+
+
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+| 19.15 Linking Codes                                                         |
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+
+Linking Stars  0200479E XXXX <-- (Up to 0114)
+              [02006FD2]XXXX
+
+
+ #       Dec      Hex
+--------------------------
+ 0 -->   0-1      0-1
+
+ 1 -->   2-9      2-9
+ 2 -->  10-17     A-11
+ 3 -->  18-25    12-19
+ 4 -->  26-33    1A-21
+ 5 -->  34-41    22-29
+ 6 -->  42-49    2A-31
+ 7 -->  50-57    32-39
+ 8 -->  58-65    3A-41
+ 9 -->  66-73    42-49
+10 -->  74-81    4A-51
+11 -->  82-89    52-59
+12 -->  90-97    5A-61
+13 -->  98-105   62-69
+14 --> 106-113   6A-71
+15 --> 114-121   72-79
+16 --> 122-129   7A-81
+17 --> 130-137   82-89
+18 --> 138-145   8A-91
+19 --> 146-153   92-99
+20 --> 154-161   9A-A1
+
+21 --> 162-167   A2-A7
+22 --> 168-173   A8-AD
+23 --> 174-179   AE-B3
+24 --> 180-185   B4-B9
+25 --> 186-191   BA-BF
+26 --> 192-197   C0-C5 <--
+27 --> 198-
+28 --> 2
+29 --> 2
+30 --> 2
+31 --> 2
+32 --> 2
+33 --> 2
+34 --> 2
+35 --> 2
+36 --> 2
+37 --> 2
+38 --> 2
+39 --> 2
+40 --> 2
+41 --> 2  -275     -113
+42 --> 276-277  114-115
+
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+| 19.16 Cooking Codes                                                         |
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+
+
+1st Recipe [Mayonnaise (s)]
+
+020047EE XXXX  to  020047FC XXXX    Ingredients
+020047FE XXXX                       Utensils
+
+     +-----------------------+
+     |Utensils               |
++----+-----------------------+
+|0001|Knife                  |
+|0002|Frying Pan             |
+|0004|Pot                    |
+|0008|Mixer                  |
+|0010|Whisk                  |
+|0020|Rolling Pin            |
+|0040|Oven                   |
+|0080|Seasoning Set-Sugar    |
+|0100|Seasoning Set-Salt     |
+|0200|Seasoning Set-Vinegar  |
+|0400|Seasoning Set-Soy Sauce|
+|0800|Seasoning Set-Miso     |
+|1000|Appears on the list    |
+|2000|Nothing                |
+|4000|Nothing                |
+|8000|Nothing                |
++----+-----------------------+
+
++------------------------------------------------------------------------------+
+|1st Item  2nd Item  3rd Item  4th Item  5th Item  6th Item  7th Item  8th Item|
++------------------------------------------------------------------------------+---------------------+
+|020047EE  020047F0  020047F2  020047F4  020047F6  020047F8  020047FA  020047FC| Mayonnaise (S)      |
+|02004802  02004804  02004806  02004808  0200480A  0200480C  0200480E  02004810| Mayonnaise (M)      |
+|02004816  02004818  0200481A  0200481C  0200481E  02004820  02004822  02004824| Mayonnaise (L)      |
+|0200482A  0200482C  0200482E  02004830  02004832  02004834  02004836  02004838| Mayonnaise (G)      |
+|0200483E  02004840  02004842  02004844  02004846  02004848  0200484A  0200484C| Mayonnaise (P)      |
+|02004852  02004854  02004856  02004858  0200485A  0200485C  0200485E  02004860| Mayonnaise (X)      |
+|02004866  02004868  0200486A  0200486C  0200486E  02004870  02004872  02004874| X Egg               |
+|0200487A  0200487C  0200487E  02004880  02004882  02004884  02004886  02004888| Milk (X)            |
++------------------------------------------------------------------------------+---------------------+
+|0200488E  02004890  02004892  02004894  02004896  02004898  0200489A  0200489C| Cheese (X)          |
+|020048A2  020048A4  020048A6  020048A8  020048AA  020048AC  020048AE  020048B0| Wild Grape Juice    |
+|020048B6  020048B8  020048BA  020048BC  020048BE  020048C0  020048C2  020048C4| Pickles             |
+|020048CA  020048CC  020048CE  020048D0  020048D2  020048D4  020048D6  020048D8| Salad               |
+|020048DE  020048E0  020048E2  020048E4  020048E6  020048E8  020048EA  020048EC| Curry Rice          |
+|020048F2  020048F4  020048F6  020048F8  020048FA  020048FC  020048FE  02004900| Stew                |
+|02004906  02004908  0200490A  0200490C  0200490E  02004910  02004912  02004914| Miso Soup           |
+|0200491A  0200491C  0200491E  02004920  02004922  02004924  02004926  02004928| Stir Fry            |
++------------------------------------------------------------------------------+---------------------+
+|0200492E  02004930  02004932  02004934  02004936  02004938  0200493A  0200493C| Fried Rice          |
+|02004942  02004944  02004946  02004948  0200494A  0200494C  0200494E  02004950| Savory Pancake      |
+|02004956  02004958  0200495A  0200495C  0200495E  02004960  02004962  02004964| Sandwich            |
+|0200496A  0200496C  0200496E  02004970  02004972  02004974  02004976  02004978| Fruit Juice         |
+|0200497E  02004980  02004982  02004984  02004986  02004988  0200498A  0200498C| Fruit Latte         |
+|02004992  02004994  02004996  02004998  0200499A  0200499C  0200499E  020049A0| Veggie Juice        |
+|020049A6  020049A8  020049AA  020049AC  020049AE  020049B0  020049B2  020049B4| Veggie Latte        |
+|020049BA  020049BC  020049BE  020049C0  020049C2  020049C4  020049C6  020049C8| Mixed Juice         |
++------------------------------------------------------------------------------+---------------------+
+|020049CE  020049D0  020049D2  020049D4  020049D6  020049D8  020049DA  020049DC| Mixed Latte         |
+|020049E2  020049E4  020049E6  020049E8  020049EA  020049EC  020049EE  020049F0| Picled Turnips      |
+|020049F6  020049F8  020049FA  020049FC  020049FE  02004A00  02004A02  02004A04| French Fries        |
+|02004A0A  02004A0C  02004A0E  02004A10  02004A12  02004A14  02004A16  02004A18| Strawberry Jam      |
+|02004A1E  02004A20  02004A22  02004A24  02004A26  02004A28  02004A2A  02004A2C| Strawberry Milk     |
+|02004A32  02004A34  02004A36  02004A38  02004A3A  02004A3C  02004A3E  02004A40| Tomato Juice        |
+|02004A46  02004A48  02004A4A  02004A4C  02004A4E  02004A50  02004A52  02004A54| ketchup             |
+|02004A5A  02004A5C  02004A5E  02004A60  02004A62  02004A64  02004A66  02004A68| Popcorn             |
++------------------------------------------------------------------------------+---------------------+
+|02004A6E  02004A70  02004A72  02004A74  02004A76  02004A78  02004A7A  02004A7C| Corn Flakes         |
+|02004A82  02004A84  02004A86  02004A88  02004A8A  02004A8C  02004A8E  02004A90| Baked Corn          |
+|02004A96  02004A98  02004A9A  02004A9C  02004A9E  02004AA0  02004AA2  02004AA4| Pineapple Juice     |
+|02004AAA  02004AAC  02004AAE  02004AB0  02004AB2  02004AB4  02004AB6  02004AB8| Pumpkin Pudding     |
+|02004ABE  02004AC0  02004AC2  02004AC4  02004AC6  02004AC8  02004ACA  02004ACC| Pumpkin Stew        |
+|02004AD2  02004AD4  02004AD6  02004AD8  02004ADA  02004ADC  02004ADE  02004AE0| Happy Eggplant      |
+|02004AE6  02004AE8  02004AEA  02004AEC  02004AEE  02004AF0  02004AF2  02004AF4| Sweet Potatoes      |
+|02004AFA  02004AFC  02004AFE  02004B00  02004B02  02004B04  02004B06  02004B08| Baked Sweet Potatoes|
++------------------------------------------------------------------------------+---------------------+
+|02004B0E  02004B10  02004B12  02004B14  02004B16  02004B18  02004B1A  02004B1C| Greens              |
+|02004B22  02004B24  02004B26  02004B28  02004B2A  02004B2C  02004B2E  02004B30| Scrambled Eggs      |
+|02004B36  02004B38  02004B3A  02004B3C  02004B3E  02004B40  02004B42  02004B44| Omelet              |
+|02004B4A  02004B4C  02004B4E  02004B50  02004B52  02004B54  02004B56  02004B58| Omelet Rice         |
+|02004B5E  02004B60  02004B62  02004B64  02004B66  02004B68  02004B6A  02004B6C| Boiled Egg          |
+|02004B72  02004B74  02004B76  02004B78  02004B7A  02004B7C  02004B7E  02004B80| Pudding             |
+|02004B86  02004B88  02004B8A  02004B8C  02004B8E  02004B90  02004B92  02004B94| Hot Milk            |
+|02004B9A  02004B9C  02004B9E  02004BA0  02004BA2  02004BA4  02004BA6  02004BA8| Butter              |
++------------------------------------------------------------------------------+---------------------+
+|02004BAE  02004BB0  02004BB2  02004BB4  02004BB6  02004BB8  02004BBA  02004BBC| Cheese Cake         |
+|02004BC2  02004BC4  02004BC6  02004BC8  02004BCA  02004BCC  02004BCE  02004BD0| Cheese Fondue       |
+|02004BD6  02004BD8  02004BDA  02004BDC  02004BDE  02004BE0  02004BE2  02004BE4| Apple Pie           |
+|02004BEA  02004BEC  02004BEE  02004BF0  02004BF2  02004BF4  02004BF6  02004BF8| Apple Jam           |
+|02004BFE  02004C00  02004C02  02004C04  02004C06  02004C08  02004C0A  02004C0C| Apple Soufflé       |
+|02004C12  02004C14  02004C16  02004C18  02004C1A  02004C1C  02004C1E  02004C20| Bamboo Rice         |
+|02004C26  02004C28  02004C2A  02004C2C  02004C2E  02004C30  02004C32  02004C34| Grape Rice          |
+|02004C3A  02004C3C  02004C3E  02004C40  02004C42  02004C44  02004C46  02004C48| Grape Juice         |
++------------------------------------------------------------------------------+---------------------+
+|02004C4E  02004C50  02004C52  02004C54  02004C56  02004C58  02004C5A  02004C5C| Mushroom Rice       |
+|02004C62  02004C64  02004C66  02004C68  02004C6A  02004C6C  02004C6E  02004C70| Truffle Rice        |
+|02004C76  02004C78  02004C7A  02004C7C  02004C7E  02004C80  02004C82  02004C84| Sushi               |
+|02004C8A  02004C8C  02004C8E  02004C90  02004C92  02004C94  02004C96  02004C98| Jam Bun             |
+|02004C9E  02004CA0  02004CA2  02004CA4  02004CA6  02004CA8  02004CAA  02004CAC| Dinner Roll         |
+|02004CB2  02004CB4  02004CB6  02004CB8  02004CBA  02004CBC  02004CBE  02004CC0| Raisin Bread        |
+|02004CC6  02004CC8  02004CCA  02004CCC  02004CCE  02004CD0  02004CD2  02004CD4| Curry Bread         |
+|02004CDA  02004CDC  02004CDE  02004CE0  02004CE2  02004CE4  02004CE6  02004CE8| Toast               |
++------------------------------------------------------------------------------+---------------------+
+|02004CEE  02004CF0  02004CF2  02004CF4  02004CF6  02004CF8  02004CFA  02004CFC| French Toast        |
+|02004D02  02004D04  02004D06  02004D08  02004D0A  02004D0C  02004D0E  02004D10| Sashimi             |
+|02004D16  02004D18  02004D1A  02004D1C  02004D1E  02004D20  02004D22  02004D24| Grilled Fish        |
+|02004D2A  02004D2C  02004D2E  02004D30  02004D32  02004D34  02004D36  02004D38| Chirashi Sushi      |
+|02004D3E  02004D40  02004D42  02004D44  02004D46  02004D48  02004D4A  02004D4C| Pizza               |
+|02004D52  02004D54  02004D56  02004D58  02004D5A  02004D5C  02004D5E  02004D60| Noodles             |
+|02004D66  02004D68  02004D6A  02004D6C  02004D6E  02004D70  02004D72  02004D74| Curry Noodles       |
+|02004D7A  02004D7C  02004D7E  02004D80  02004D82  02004D84  02004D86  02004D88| Tempura Noodles     |
++------------------------------------------------------------------------------+---------------------+
+|02004D8E  02004D90  02004D92  02004D94  02004D96  02004D98  02004D9A  02004D9C| Fried Noodles       |
+|02004DA2  02004DA4  02004DA6  02004DA8  02004DAA  02004DAC  02004DAE  02004DB0| buckwheat Noodles   |
+|02004DB6  02004DB8  02004DBA  02004DBC  02004DBE  02004DC0  02004DC2  02004DC4| Noodles with Tempura|
+|02004DCA  02004DCC  02004DCE  02004DD0  02004DD2  02004DD4  02004DD6  02004DD8| Fried Noodles       |
+|02004DDE  02004DE0  02004DE2  02004DE4  02004DE6  02004DE8  02004DEA  02004DEC| Buckwheat Chips     |
+|02004DF2  02004DF4  02004DF6  02004DF8  02004DFA  02004DFC  02004DFE  02004E00| Tempura             |
+|02004E06  02004E08  02004E0A  02004E0C  02004E0E  02004E10  02004E12  02004E14| Mountain Stew       |
+|02004E1A  02004E1C  02004E1E  02004E20  02004E22  02004E24  02004E26  02004E28| Moon Dumplings      |
++------------------------------------------------------------------------------+---------------------+
+|02004E2E  02004E30  02004E32  02004E34  02004E36  02004E38  02004E3A  02004E3C| Roasted Rice Cake   |
+|02004E42  02004E44  02004E46  02004E48  02004E4A  02004E4C  02004E4E  02004E50| Toasted Rice Balls  |
+|02004E56  02004E58  02004E5A  02004E5C  02004E5E  02004E60  02004E62  02004E64| Rice Gruel          |
+|02004E6A  02004E6C  02004E6E  02004E70  02004E72  02004E74  02004E76  02004E78| Tempura Rice        |
+|02004E7E  02004E80  02004E82  02004E84  02004E86  02004E88  02004E8A  02004E8C| Egg over Rice       |
+|02004E92  02004E94  02004E96  02004E98  02004E9A  02004E9C  02004E9E  02004EA0| Candied Potato      |
+|02004EA6  02004EA8  02004EAA  02004EAC  02004EAE  02004EB0  02004EB2  02004EB4| Potato Pancakes     |
+|02004EBA  02004EBC  02004EBE  02004EC0  02004EC2  02004EC4  02004EC6  02004EC8| Fish Sticks         |
++------------------------------------------------------------------------------+---------------------+
+|02004ECE  02004ED0  02004ED2  02004ED4  02004ED6  02004ED8  02004EDA  02004EDC| Cookies             |
+|02004EE2  02004EE4  02004EE6  02004EE8  02004EEA  02004EEC  02004EEE  02004EF0| Chocolate Cookies   |
+|02004EF6  02004EF8  02004EFA  02004EFC  02004EFE  02004F00  02004F02  02004F04| Ice Cream           |
+|02004F0A  02004F0C  02004F0E  02004F10  02004F12  02004F14  02004F16  02004F18| Cake                |
+|02004F1E  02004F20  02004F22  02004F24  02004F26  02004F28  02004F2A  02004F2C| Chocolate Cake      |
+|02004F32  02004F34  02004F36  02004F38  02004F3A  02004F3C  02004F3E  02004F40| Pancakes            |
+|02004F46  02004F48  02004F4A  02004F4C  02004F4E  02004F50  02004F52  02004F54| Relaxation Tea      |
+|02004F5A  02004F5C  02004F5E  02004F60  02004F62  02004F64  02004F66  02004F68| SUGDW Apple         |
++------------------------------------------------------------------------------+---------------------+
+|02004F6E  02004F70  02004F72  02004F74  02004F76  02004F78  02004F7A  02004F7C| HMSGB Apple         |
+|02004F82  02004F84  02004F86  02004F88  02004F8A  02004F8C  02004F8E  02004F90| AEPFE Apple         |
+|02004F96  02004F98  02004F9A  02004F9C  02004F9E  02004FA0  02004FA2  02004FA4| Bodigizer           |
+|02004FAA  02004FAC  02004FAE  02004FB0  02004FB2  02004FB4  02004FB6  02004FB8| Bodigizer XL        |
+|02004FBE  02004FC0  02004FC2  02004FC4  02004FC6  02004FC8  02004FCA  02004FCC| Turbojolt           |
+|02004FD2  02004FD4  02004FD6  02004FD8  02004FDA  02004FDC  02004FDE  02004FE0| Turbojolt XL        |
+|02004FE6  02004FE8  02004FEA  02004FEC  02004FEE  02004FF0  02004FF2  02004FF4| Relax Tea Leaves    |
+|02004FFA  02004FFC  02004FFE  02005000  02005002  02005004  02005006  02005008| Elli Leaves         |
++------------------------------------------------------------------------------+---------------------+
+|0200500E  02005010  02005012  02005014  02005016  02005018  0200501A  0200501C| Spring Sun          |
+|02005022  02005024  02005026  02005028  0200502A  0200502C  0200502E  02005030| Summer Sun          |
+|02005036  02005038  0200503A  0200503C  0200503E  02005040  02005042  02005044| Autumn Sun          |
+|0200504A  0200504C  0200504E  02005050  02005052  02005054  02005056  02005058| Winter Sun          |
++------------------------------------------------------------------------------+---------------------+
+
+
+Turnip                    0001
+Potato                    0002
+Cucumber                  0003
+Strawberry                0004
+Cabbage                   0005
+Tomato                    0006
+Corn                      0007
+Onion                     0008
+Pumpkin                   0009
+Pineapple                 000A
+Eggplant                  000B
+Carrot                    000C
+Sweet Potato              000D
+Spinach                   000E
+Green Pepper              000F
+Regular Quality Egg       0010
+Good Quality Egg          0011
+High Quality Egg          0012
+Golden Egg                0013
+P Egg                     0014
+X Egg                     0015
+Spa-Boiled Egg            0016
+Mayonnaise (S)            0017
+Mayonnaise (M)            0018
+Mayonnaise (L)            0019
+Mayonnaise (G)            001A
+Mayonnaise (P)            001B
+Mayonnaise (X)            001C
+Milk (S)                  001D
+Milk (M)                  001E
+Milk (L)                  001F
+Milk (G)                  0020
+Milk (P)                  0021
+Milk (X)                  0022
+Cheese (S)                0023
+Cheese (M)                0024
+Cheese (L)                0025
+Cheese (G)                0026
+Cheese (P)                0027
+Cheese (X)                0028
+Apple                     0029
+Honey                     002A
+Bamboo Shoot              002B
+Wild Grapes               002C
+Mushroom                  002D
+Poisonous Mushroom        002E
+Truffle                   002F
+Blue Grass                0030
+Green Grass               0031
+Red Grass                 0032
+Yellow Grass              0033
+Orange Grass              0034
+Purple Grass              0035
+Indigo Grass              0036
+Black Grass               0037
+White Grass               0038
+Queen of the Night        0039
+Bodigizer                 003A
+Bodigizer XL              003B
+Turbojolt                 003C
+Turbojolt XL              003D
+Wine                      003E
+Grape Juice               003F
+Rice Ball                 0040
+Bread                     0041
+Oil                       0042
+Flour                     0043
+Curry Powder              0044
+Muffin Mix                0045
+Chocolate                 0046
+Relaxation Tea Leaves     0047
+SUGDW Apple               0048
+HMSGB Apple               0049
+AEPFE Apple               004A
+Buckwheat Flour           004B
+Wild Grape Wine           004C
+Salad                     004D
+Curry Rice                004E
+Stew                      004F
+Miso Soup                 0050
+Stir Fry                  0051
+Fried Rice                0052
+Savory Pancake            0053
+Sandwich                  0054
+Fruit Juice               0055
+Vegetable Juice           0056
+Mixed Juice               0057
+Fruit Latte               0058
+Vegetable Latte           0059
+Mixed Latte               005A
+Strawberry Smoothie       005B
+Strawberry Jam            005C
+Tomato Juice              005D
+Pickled Turnip            005E
+French Fries              005F
+Pickles                   0060
+Ketchup                   0061
+Popcorn                   0062
+Corn Flakes               0063
+Baked Corn                0064
+Pineapple Juice           0065
+Pumpkin Pudding           0066
+Pumpkin Stew              0067
+Happy Eggplant            0068
+Sweet Potatoes            0069
+Baked Sweet Potato        006A
+Greens                    006B
+Scrambled Eggs            006C
+Omelet                    006D
+Omelet Rice               006E
+Boiled Egg                006F
+Hot Milk                  0070
+Butter                    0071
+Cheese Cake               0072
+Cheese Fondue             0073
+Apple Pie                 0074
+Apple Jam                 0075
+Apple Soufflé             0076
+Mushroom Rice             0077
+Bamboo Rice               0078
+Truffle Rice              0079
+Sushi                     007A
+Jam Bun                   007B
+Dinner Roll               007C
+Raisin Bread              007D
+Grape Jam                 007E
+Curry Bread               007F
+Sashimi                   0080
+Grilled Fish              0081
+Sashimi Mix               0082
+Pizza                     0083
+Noodles                   0084
+Curry Noodles             0085
+Tempura Noodles           0086
+Fried Noodles             0087
+Buckwheat Noodles         0088
+Tempura Buckwheat Noodles 0089
+Fried Noodles             008A
+Buckwheat Chips           008B
+Cookies                   008C
+Chocolate Cookies         008D
+Tempura                   008E
+Ice Cream                 008F
+Cake                      0090
+Chocolate Cake            0091
+Relaxation Tea            0092
+Toast                     0093
+French Toast              0094
+Pudding                   0095
+Mountain Stew             0096
+Moon Dumplings            0097
+Rice Cake                 0098
+Roasted Rice Cake         0099
+Elli Leaves               009A
+Failure                   009B
+Failure                   009C
+Failure                   009D
+Failure                   009E
+Failure                   009F
+Failure                   00A0
+Small Fish                00A1
+Medium Fish               00A2
+Large Fish                00A3
+Toasted Rice Ball         00A4
+Tempura Rice              00A5
+Egg Over Rice             00A6
+Rice Gruel                00A7
+Pancakes                  00A8
+Fish Sticks               00A9
+Candied Potato            00AA
+Potato Pancakes           00AB
+-------------------------------------------------------------------------------
+Moon Drop Grass           00AC
+Pink Cat Grass            00AD
+Blue Magic Grass          00AE
+Red Magic Grass           00AF
+Toy Flower                00B0
+Wool (S)                  00B1
+Wool (M)                  00B2
+Wool (L)                  00B3
+Wool (G)                  00B4
+Wool (P)                  00B5
+Wool (X)                  00B6
+Yarn (S)                  00B7
+Yarn (M)                  00B8
+Yarn (L)                  00B9
+Yarn (G)                  00BA
+Yarn (P)                  00BB
+Yarn (X)                  00BC
+Junk Ore                  00BD
+Copper Ore                00BE
+Silver Ore                00BF
+Gold Ore                  00C0
+Mystrile Ore              00C1
+Orichalc Ore              00C2
+Adamantite Ore            00C3
+Moon Stone                00C4
+Sand Rose                 00C5
+Pink Diamond              00C6
+Alexandrite               00C7
+Mythic Stone              00C8
+Diamond                   00C9
+Emerald                   00CA
+Ruby                      00CB
+Topaz                     00CC
+Peridot                   00CD
+Fluorite                  00CE
+Agate                     00CF
+Amethyst                  00D0
+Harvest Goddess Jewel     00D1
+Kappa Jewel               00D2
+Jewel of Truth            00D3
+Spring Sun                00D4
+Summer Sun                00D5
+Autumn Sun                00D6
+Winter Sun                00D7
+Bracelet                  00D8
+Necklace                  00D9
+Earrings                  00DA
+Broach                    00DB
+Weeds                     00DC
+Stones                    00DD
+Branches                  00DE
+Recipe for French Fries   00DF
+Recipe for Ketchup        00E0
+Ball                      00E1
+Pirate Treasure           00E2
+Fossil of Ancient Fish    00E3
+Empty Can                 00E4
+Boots                     00E5
+Fish Bones                00E6
+Karen's Wine              00E7
+Popuri's Mud Ball         00E8
+Ann's Music Box           00E9
+Mary's Great Book         00EA
+Elli's Pressed Flower     00EB
+Album 1                   00EC
+Album 2                   00ED
+Album 3                   00EE
+Album 4                   00EF
+Album 5                   00F0
+Album 6                   00F1
+Album 7                   00F2
+Album 8                   00F3
+Album 9                   00F4
+Album 10                  00F5
+Album 11                  00F6
+Album 12                  00F7
+Album 13                  00F8
+Album 14                  00F9
+Album 15                  00FA
+Band-Aid                  00FB
+Book from H.G.            00FC
+Perfume                   00FD
+Photo                     00FE
+Plant Encyclopedia        00FF
+Invitation                0100
+Dress                     0101
+Facial Pack               0102
+Skin Lotion               0103
+Sunblock                  0104
+Lumber                    0105
+Golden Lumber             0106
+Animal Fodder             0107
+Chicken Feed              0108
+Certificate of R-P-S      0109
+Frisbee                   010A
+
