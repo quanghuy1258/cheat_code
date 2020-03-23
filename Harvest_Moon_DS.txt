@@ -1,0 +1,90 @@
+Action Replay Code - Explanation
+
+  32-bit (Constant RAM Writes)
+  0XXXXXXX YYYYYYYY
+  Writes word YYYYYYYY to [XXXXXXX+offset].
+
+  16-bit (Constant RAM Writes)
+  1XXXXXXX 0000YYYY
+  Writes halfword YYYY to [XXXXXXX+offset].
+
+  8-bit (Constant RAM Writes)
+  2XXXXXXX 000000YY
+  Writes byte YY to [XXXXXXX+offset].
+
+  Greater Than (Conditional 32-Bit Code Types)
+  3XXXXXXX YYYYYYYY
+  Checks if YYYYYYYY > (word at [XXXXXXX])
+  If not, the code(s) following this one are not executed (ie. execution status is set to false) until a code type D0 or D2 is encountered, or until the end of the code list is reached.
+
+  Less Than (Conditional 32-Bit Code Types)
+  4XXXXXXX YYYYYYYY
+  Checks if YYYYYYYY < (word at [XXXXXXX])
+  If not, the code(s) following this one are not executed (ie. execution status is set to false) until a code type D0 or D2 is encountered, or until the end of the code list is reached.
+
+  Equal To (Conditional 32-Bit Code Types)
+  5XXXXXXX YYYYYYYY
+  Checks if YYYYYYYY == (word at [XXXXXXX])
+  If not, the code(s) following this one are not executed (ie. execution status is set to false) until a code type D0 or D2 is encountered, or until the end of the code list is reached.
+
+  Not Equal To (Conditional 32-Bit Code Types)
+  6XXXXXXX YYYYYYYY
+  Checks if YYYYYYYY != (word at [XXXXXXX])
+  If not, the code(s) following this one are not executed (ie. execution status is set to false) until a code type D0 or D2 is encountered, or until the end of the code list is reached.
+
+  Greater Than (Conditional 16-Bit + Masking RAM "Writes") (but WRITING has nothing to do with this)
+  7XXXXXXX ZZZZYYYY
+  Checks if (YYYY) > (not (ZZZZ) & halfword at [XXXX]).
+  If not, the code(s) following this one are not executed (ie. execution status is set to false) until a code type D0 or D2 is encountered, or until the end of the code list is reached.
+
+  Less Than (Conditional 16-Bit + Masking RAM "Writes") (but WRITING has nothing to do with this)
+  8XXXXXXX ZZZZYYYY
+  Checks if (YYYY) < (not (ZZZZ) & halfword at [XXXX]).
+  If not, the code(s) following this one are not executed (ie. execution status is set to false) until a code type D0 or D2 is encountered, or until the end of the code list is reached.
+
+  Equal To (Conditional 16-Bit + Masking RAM "Writes") (but WRITING has nothing to do with this)
+  9XXXXXXX ZZZZYYYY
+  Checks if (YYYY) == (not (ZZZZ) & halfword at [XXXX]).
+  If not, the code(s) following this one are not executed (ie. execution status is set to false) until a code type D0 or D2 is encountered, or until the end of the code list is reached.
+
+  Not Equal To (Conditional 16-Bit + Masking RAM "Writes") (but WRITING has nothing to do with this)
+  AXXXXXXX ZZZZYYYY
+  Checks if (YYYY) != (not (ZZZZ) & halfword at [XXXX]).
+  If not, the code(s) following this one are not executed (ie. execution status is set to false) until a code type D0 or D2 is encountered, or until the end of the code list is reached.
+
+NOTE: Above explanation is not enough, but the remaining detail is too complex to be mentioned here. So, I just only use these types.
+
+===============================================================================
+
+Harvest Moon DS
+
+Your name:
+023D80FC X4X3X2X1
+123D8100 0000X6X5
+
+Your farm name:
+023D80EC X4X3X2X1
+123D80F0 0000X6X5
+
+Your dog name:
+023D813C X4X3X2X1
+123D8140 0000X6X5
+
+Your cat name:
+023D814C X4X3X2X1
+123D8150 0000X6X5
+
+Money:
+023D6B08 XXXXXXXX (money = XXXXXXXX in hex)
+
+Stamina:
+223D6B05 00000064
+
+Fatigue:
+223D6B07 00000000
+
+Pedometer
+023DDF20 XXXXXXXX (pedometer = XXXXXXXX in hex)
+
+Watering can
+223DDF1A 000000XX
