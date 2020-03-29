@@ -56,7 +56,102 @@ NOTE: Above explanation is not enough, but the remaining detail is too complex t
 
 ===============================================================================
 
-Harvest Moon DS
+Harvest Moon DS (EU) - Ver 1.1
+
+Your name:
+023D8098 X4X3X2X1
+123D809C 0000X6X5
+
+Your birthday:
+223D6AA0 000000XX
+
+Your farm name:
+023D8088 X4X3X2X1
+123D808C 0000X6X5
+
+Your child name:
+023D80B8 X4X3X2X1
+123D80BC 0000X6X5
+
+Your dog name:
+023D80D8 X4X3X2X1
+123D80DC 0000X6X5
+
+Your cat name:
+023D80E8 X4X3X2X1
+123D80EC 0000X6X5
+
+Your horse name:
+023D80C8 X4X3X2X1
+123D80CC 0000X6X5
+
+Money:
+023D6AA4 XXXXXXXX (money = XXXXXXXX in hex)
+
+Stamina:
+223D6AA1 00000064 (0x64 = 100)
+
+Stamina Capacity:
+223D6AA2 000000XX (default: XX = 64)
+
+Fatigue:
+223D6AA3 00000000
+
+Fatigue Capacity:
+223D6ABD 000000XX (default: XX = 64)
+
+Pedometer:
+023DDEC0 XXXXXXXX (pedometer = XXXXXXXX in hex)
+
+Watering can:
+223DDEB6 000000XX
+
+Date and time:
+023D6A98 X4X3X2X1
+
+Sprite medals:
+023D6AA8 XXXXXXXX (medals = XXXXXXXX in hex)
+
+Rucksack:
+- Tools:       023D6AAC               XXYYZZTT
+- Items:       023D6AB0               XXYYZZTT
+- Accessories: 023D6AB4               XXYYZZTT
+- Other:      [023D6AC4 ... 023D6B98] XXYYZZTT
+- Tool box:   [023D6E30 ... 023D70B4] XXYYZZTT
+- Beauty box: [023D7348 ... 023D75CC] XXYYZZTT
+- XXYYZZTT: XX = number, YY = level, ZZ = type, TT = id
+
+Max tool skills:
+- Axe:          123DDEC4 0000FFFF
+- Fishing Pole: 123DDEC6 0000FFFF
+- Hammer:       123DDEC8 0000FFFF
+- Hoe:          123DDECA 0000FFFF
+- Sickle:       123DDECC 0000FFFF
+- Watering Can: 123DDECE 0000FFFF
+
+Farm Degree points:
+023DDE48 XXXXXXXX
+
+Card list: [023DDBD8 ... 023DDD53] = [FF ... FF]
+
+Animal Touch Screen High Score:
+- Petting:  223DDEA4 0000XXXX
+- Milking:  223DDEA8 0000XXXX
+- Shearing: 223DDEAA 0000XXXX
+- Brushing: 223DDEA6 0000XXXX
+
+Unknown things:
+- Tool symbols (Tool skills): 023DDEBC ????????
+- Harvest Sprite Station:     023DDD6C ????????
+- Child:                      223DDDA3 00000001
+- Horese:                     223DDDA6 000000??
+- Furniture:                  223DE2A8 000000??
+- Current weather:            123D6A9C 0000????
+- Tomorrow weather:           123D6A9E 0000????
+
+===============================================================================
+
+Harvest Moon DS (US)
 
 Your name:
 023D80FC X4X3X2X1
@@ -83,8 +178,8 @@ Stamina:
 Fatigue:
 223D6B07 00000000
 
-Pedometer
+Pedometer:
 023DDF20 XXXXXXXX (pedometer = XXXXXXXX in hex)
 
-Watering can
+Watering can:
 223DDF1A 000000XX
