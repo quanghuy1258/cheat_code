@@ -1,0 +1,57 @@
+--------------------------------------------------
+Header Info for: Harvest Moon DS (USA) (Rev 1).nds
+--------------------------------------------------
+Internal Name   : HM DS
+Game Serial     : NTR-ABCE-USA
+Maker Code      : E9
+Publisher       : Natsume
+Version         : 1.1 (01h)
+Secure Checksum : 83E5 (BAD)
+Logo Checksum   : CF56 (OK)
+Header Checksum : 7790 (OK)
+File Size       : 512Mbit (67108864 bytes)
+Card Size       : 512Mbit (67108864 bytes) (09h)
+File CRC32      : CEA0FDCD
+--------------------------------------------------
+
+----------
+Language 1
+----------
+
+HARVEST MOON DS
+NATSUME INC
+
+----------
+Language 2
+----------
+
+HARVEST MOON DS
+NATSUME INC
+
+----------
+Language 3
+----------
+
+HARVEST MOON DS
+NATSUME INC
+
+----------
+Language 4
+----------
+
+HARVEST MOON DS
+NATSUME INC
+
+----------
+Language 5
+----------
+
+HARVEST MOON DS
+NATSUME INC
+
+----------
+Language 6
+----------
+
+HARVEST MOON DS
+NATSUME INC

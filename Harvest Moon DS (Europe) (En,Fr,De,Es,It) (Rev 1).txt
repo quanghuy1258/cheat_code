@@ -1,0 +1,57 @@
+----------------------------------------------------------------------
+Header Info for: Harvest Moon DS (Europe) (En,Fr,De,Es,It) (Rev 1).nds
+----------------------------------------------------------------------
+Internal Name   : HM DS
+Game Serial     : NTR-ABCP-EUR
+Maker Code      : 99
+Publisher       : Victor Interactive Software
+Version         : 1.1 (01h)
+Secure Checksum : B397 (BAD)
+Logo Checksum   : CF56 (OK)
+Header Checksum : B4B7 (OK)
+File Size       : 512Mbit (67108864 bytes)
+Card Size       : 512Mbit (67108864 bytes) (09h)
+File CRC32      : 0C2F12C7
+----------------------------------------------------------------------
+
+----------
+Language 1
+----------
+
+HARVEST MOON DS
+Rising Star Games
+
+----------
+Language 2
+----------
+
+HARVEST MOON DS
+Rising Star Games
+
+----------
+Language 3
+----------
+
+HARVEST MOON DS
+Rising Star Games
+
+----------
+Language 4
+----------
+
+HARVEST MOON DS
+Rising Star Games
+
+----------
+Language 5
+----------
+
+HARVEST MOON DS
+Rising Star Games
+
+----------
+Language 6
+----------
+
+HARVEST MOON DS
+Rising Star Games
